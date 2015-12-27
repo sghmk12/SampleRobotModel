@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9K_QIKc7EeWje-SERfz6BA" name="RootElement">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_PLPuIKyuEeWRLuq1zmV17g" name="Tool-Op"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YAR1IKyuEeWRLuq1zmV17g" name="Robot">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dRDyQKyuEeWRLuq1zmV17g" name="Elevaotr Up"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jur9AKyuEeWRLuq1zmV17g" name="Elevator Down"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_q2dQ8KyuEeWRLuq1zmV17g" name="Open Claw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7nWzkKy0EeWRLuq1zmV17g" name="Close Claw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_q_qMEKy1EeWRLuq1zmV17g" name="Raise Wrist"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tPZaEKy1EeWRLuq1zmV17g" name="Lower Wrist"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1nDFsKyuEeWRLuq1zmV17g" memberEnd="_1nM2sKyuEeWRLuq1zmV17g _1nOE0KyuEeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1nFh8KyuEeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1nGJAKyuEeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1nM2sKyuEeWRLuq1zmV17g" name="elevaotr up" type="_dRDyQKyuEeWRLuq1zmV17g" association="_1nDFsKyuEeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1nOE0KyuEeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_1nDFsKyuEeWRLuq1zmV17g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4cwukKyuEeWRLuq1zmV17g" memberEnd="_4cx8sKyuEeWRLuq1zmV17g _4cx8sayuEeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4cxVoKyuEeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4cxVoayuEeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4cx8sKyuEeWRLuq1zmV17g" name="elevator down" type="_jur9AKyuEeWRLuq1zmV17g" association="_4cwukKyuEeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4cx8sayuEeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_4cwukKyuEeWRLuq1zmV17g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6KO9AKyuEeWRLuq1zmV17g" memberEnd="_6KQLIayuEeWRLuq1zmV17g _6KQLIqyuEeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6KPkEKyuEeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6KQLIKyuEeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6KQLIayuEeWRLuq1zmV17g" name="open claw" type="_q2dQ8KyuEeWRLuq1zmV17g" association="_6KO9AKyuEeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6KQLIqyuEeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_6KO9AKyuEeWRLuq1zmV17g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_wgu2sKyvEeWRLuq1zmV17g" name="wpilib">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wiw3AKyvEeWRLuq1zmV17g" name="Double"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_wiDsYKyvEeWRLuq1zmV17g" name="edu">
+      <packagedElement xmi:type="uml:Package" xmi:id="_wiETcKyvEeWRLuq1zmV17g" name="wpi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_wiE6gKyvEeWRLuq1zmV17g" name="first">
+          <packagedElement xmi:type="uml:Package" xmi:id="_wiE6gayvEeWRLuq1zmV17g" name="wpilibj">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_wiQgsKyvEeWRLuq1zmV17g" name="NamedSendable"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_wiFhkKyvEeWRLuq1zmV17g" name="command">
+              <packagedElement xmi:type="uml:Class" xmi:id="_wiLoMKyvEeWRLuq1zmV17g" name="Command" visibility="public" isAbstract="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_wiPSkKyvEeWRLuq1zmV17g">
+                  <body>
+ * The Command class is at the very core of the entire command framework.
+ * Every command can be started with a call to {@link Command#start() start()}.
+ * Once a command is started it will call {@link Command#initialize() initialize()}, and then
+ * will repeatedly call {@link Command#execute() execute()} until the {@link Command#isFinished() isFinished()}
+ * returns true.  Once it does, {@link Command#end() end()} will be called.
+ *
+ * &lt;p>However, if at any point while it is running {@link Command#cancel() cancel()} is called, then
+ * the command will be stopped and {@link Command#interrupted() interrupted()} will be called.&lt;/p>
+ *
+ * &lt;p>If a command uses a {@link Subsystem}, then it should specify that it does so by
+ * calling the {@link Command#requires(Subsystem) requires(...)} method
+ * in its constructor. Note that a Command may have multiple requirements, and
+ * {@link Command#requires(Subsystem) requires(...)} should be
+ * called for each one.&lt;/p>
+ *
+ * &lt;p>If a command is running and a new command with shared requirements is started,
+ * then one of two things will happen.  If the active command is interruptible,
+ * then {@link Command#cancel() cancel()} will be called and the command will be removed
+ * to make way for the new one.  If the active command is not interruptible, the
+ * other one will not even be started, and the active one will continue functioning.&lt;/p>
+ *
+ * @author Brad Miller
+ * @author Joe Grinstead
+ * @see Subsystem
+ * @see CommandGroup
+ * @see IllegalUseOfCommandException
+ </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wil34KyvEeWRLuq1zmV17g" name="m_name" visibility="private" type="_wilQ0qyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wiwP8KyvEeWRLuq1zmV17g">
+                    <body> The name of this command </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wixeEKyvEeWRLuq1zmV17g" name="m_startTime" visibility="private" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wiyFIKyvEeWRLuq1zmV17g">
+                    <body> The time since this command was initialized </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wiysMKyvEeWRLuq1zmV17g" name="m_timeout" visibility="private" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wizTQKyvEeWRLuq1zmV17g">
+                    <body> The time (in seconds) before this command &quot;times out&quot; (or -1 if no timeout) </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi0hYKyvEeWRLuq1zmV17g" name="m_initialized" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi0hYayvEeWRLuq1zmV17g">
+                    <body> Whether or not this command has been initialized </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi4LwKyvEeWRLuq1zmV17g" name="m_requirements" visibility="private" type="_wi3ksKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi4y0KyvEeWRLuq1zmV17g">
+                    <body> The requirements (or null if no requirements) </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi4y0ayvEeWRLuq1zmV17g" name="m_running" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi5Z4KyvEeWRLuq1zmV17g">
+                    <body> Whether or not it is running </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi6A8KyvEeWRLuq1zmV17g" name="m_interruptible" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi6A8ayvEeWRLuq1zmV17g">
+                    <body> Whether or not it is interruptible</body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi6oAKyvEeWRLuq1zmV17g" name="m_canceled" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi6oAayvEeWRLuq1zmV17g">
+                    <body> Whether or not it has been canceled </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi7PEKyvEeWRLuq1zmV17g" name="m_locked" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi72IKyvEeWRLuq1zmV17g">
+                    <body> Whether or not it has been locked </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi8dMKyvEeWRLuq1zmV17g" name="m_runWhenDisabled" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi8dMayvEeWRLuq1zmV17g">
+                    <body> Whether this command should run when the robot is disabled </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wi9rUKyvEeWRLuq1zmV17g" name="m_parent" visibility="private" type="_wi9EQKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi-SYKyvEeWRLuq1zmV17g">
+                    <body> The {@link CommandGroup} this is in </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wjeBoKyvEeWRLuq1zmV17g" name="emptyEnumeration" visibility="private" isStatic="true" type="_wjTCgKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjeBoayvEeWRLuq1zmV17g">
+                    <body> An empty enumeration given whenever there are no requirements </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wjhsAKyvEeWRLuq1zmV17g" name="listener" visibility="private" type="_wjgd4ayvEeWRLuq1zmV17g" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_wjjhMayvEeWRLuq1zmV17g" name="table" visibility="private" type="_wjjhMKyvEeWRLuq1zmV17g" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_wiejIKyvEeWRLuq1zmV17g" name="Command implements NamedSendable" client="_wiLoMKyvEeWRLuq1zmV17g" supplier="_wiQgsKyvEeWRLuq1zmV17g" contract="_wiQgsKyvEeWRLuq1zmV17g"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wi-5cKyvEeWRLuq1zmV17g" name="getName" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wi_ggKyvEeWRLuq1zmV17g">
+                    <body>
+     * Returns the name of this command.
+     * If no name was specified in the constructor,
+     * then the default is the name of the class.
+     * @return the name of this command
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjAHkKyvEeWRLuq1zmV17g" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjIqcKyvEeWRLuq1zmV17g" name="setTimeout" visibility="protected" isLeaf="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjIqcayvEeWRLuq1zmV17g">
+                    <body>
+     * Sets the timeout of this command.
+     * @param seconds the timeout (in seconds)
+     * @throws IllegalArgumentException if seconds is negative
+     * @see Command#isTimedOut() isTimedOut()
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjJRgKyvEeWRLuq1zmV17g" name="seconds" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjJ4kKyvEeWRLuq1zmV17g" name="timeSinceInitialized" visibility="public" isLeaf="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjJ4kayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns the time since this command was initialized (in seconds).
+     * This function will work even if there is no specified timeout.
+     * @return the time since this command was initialized (in seconds).
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjKfoKyvEeWRLuq1zmV17g" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjLGsKyvEeWRLuq1zmV17g" name="requires" visibility="protected">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjLGsayvEeWRLuq1zmV17g">
+                    <body>
+     * This method specifies that the given {@link Subsystem} is used by this command.
+     * This method is crucial to the functioning of the Command System in general.
+     *
+     * &lt;p>Note that the recommended way to call this method is in the constructor.&lt;/p>
+     *
+     * @param subsystem the {@link Subsystem} required
+     * @throws IllegalArgumentException if subsystem is null
+     * @throws IllegalUseOfCommandException if this command has started before or if it has been given to a {@link CommandGroup}
+     * @see Subsystem
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjLtwKyvEeWRLuq1zmV17g" name="subsystem" type="_wjKfoayvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjLtwayvEeWRLuq1zmV17g" name="removed">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjLtwqyvEeWRLuq1zmV17g">
+                    <body>
+     * Called when the command has been removed.
+     * This will call {@link Command#interrupted() interrupted()} or {@link Command#end() end()}.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjMU0KyvEeWRLuq1zmV17g" name="run">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjMU0ayvEeWRLuq1zmV17g">
+                    <body>
+     * The run method is used internally to actually run the commands.
+     * @return whether or not the command should stay within the {@link Scheduler}.
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjMU0qyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjM74KyvEeWRLuq1zmV17g" name="initialize" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjM74ayvEeWRLuq1zmV17g">
+                    <body>
+     * The initialize method is called the first time this Command is run after
+     * being started.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjNi8KyvEeWRLuq1zmV17g" name="_initialize">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjNi8ayvEeWRLuq1zmV17g">
+                    <body> A shadow method called before {@link Command#initialize() initialize()} </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjOKAKyvEeWRLuq1zmV17g" name="execute" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjOKAayvEeWRLuq1zmV17g">
+                    <body>
+     * The execute method is called repeatedly until this Command either finishes
+     * or is canceled.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjOKAqyvEeWRLuq1zmV17g" name="_execute">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjOxEKyvEeWRLuq1zmV17g">
+                    <body> A shadow method called before {@link Command#execute() execute()} </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjOxEayvEeWRLuq1zmV17g" name="isFinished" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjOxEqyvEeWRLuq1zmV17g">
+                    <body>
+     * Returns whether this command is finished.
+     * If it is, then the command will be removed
+     * and {@link Command#end() end()} will be called.
+     *
+     * &lt;p>It may be useful for a team to reference the {@link Command#isTimedOut() isTimedOut()} method
+     * for time-sensitive commands.&lt;/p>
+     * @return whether this command is finished.
+     * @see Command#isTimedOut() isTimedOut()
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjPYIKyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjPYIayvEeWRLuq1zmV17g" name="end" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjPYIqyvEeWRLuq1zmV17g">
+                    <body>
+     * Called when the command ended peacefully.  This is where you may want
+     * to wrap up loose ends, like shutting off a motor that was being used
+     * in the command.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjP_MKyvEeWRLuq1zmV17g" name="_end">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjP_MayvEeWRLuq1zmV17g">
+                    <body> A shadow method called after {@link Command#end() end()}. </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjQmQKyvEeWRLuq1zmV17g" name="interrupted" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjQmQayvEeWRLuq1zmV17g">
+                    <body>
+     * Called when the command ends because somebody called {@link Command#cancel() cancel()}
+     * or another command shared the same requirements as this one, and booted
+     * it out.
+     *
+     * &lt;p>This is where you may want
+     * to wrap up loose ends, like shutting off a motor that was being used
+     * in the command.&lt;/p>
+     *
+     * &lt;p>Generally, it is useful to simply call the {@link Command#end() end()} method
+     * within this method&lt;/p>
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjQmQqyvEeWRLuq1zmV17g" name="_interrupted">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjQmQ6yvEeWRLuq1zmV17g">
+                    <body> A shadow method called after {@link Command#interrupted() interrupted()}. </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjRNUKyvEeWRLuq1zmV17g" name="startTiming" visibility="private">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjRNUayvEeWRLuq1zmV17g">
+                    <body>
+     * Called to indicate that the timer should start.
+     * This is called right before {@link Command#initialize() initialize()} is, inside the
+     * {@link Command#run() run()} method.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjR0YKyvEeWRLuq1zmV17g" name="isTimedOut" visibility="protected">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjR0YayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns whether or not the {@link Command#timeSinceInitialized() timeSinceInitialized()}
+     * method returns a number which is greater than or equal to the timeout for the command.
+     * If there is no timeout, this will always return false.
+     * @return whether the time has expired
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjR0YqyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjSbcKyvEeWRLuq1zmV17g" name="getRequirements">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjSbcayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns the requirements (as an {@link Enumeration Enumeration} of {@link Subsystem Subsystems}) of this command
+     * @return the requirements (as an {@link Enumeration Enumeration} of {@link Subsystem Subsystems}) of this command
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjTCgayvEeWRLuq1zmV17g" type="_wjTCgKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjTCgqyvEeWRLuq1zmV17g" name="lockChanges">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjTpkKyvEeWRLuq1zmV17g">
+                    <body>
+     * Prevents further changes from being made
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjTpkayvEeWRLuq1zmV17g" name="validate">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjTpkqyvEeWRLuq1zmV17g">
+                    <body>
+     * If changes are locked, then this will throw an {@link IllegalUseOfCommandException}.
+     * @param message the message to say (it is appended by a default message)
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjUQoKyvEeWRLuq1zmV17g" name="message" type="_wilQ0qyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjUQoayvEeWRLuq1zmV17g" name="setParent">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjU3sKyvEeWRLuq1zmV17g">
+                    <body>
+     * Sets the parent of this command.  No actual change is made to the group.
+     * @param parent the parent
+     * @throws IllegalUseOfCommandException if this {@link Command} already is already in a group
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjU3sayvEeWRLuq1zmV17g" name="parent" type="_wi9EQKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjVewKyvEeWRLuq1zmV17g" name="start" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjVewayvEeWRLuq1zmV17g">
+                    <body>
+     * Starts up the command.  Gets the command ready to start.
+     * &lt;p>Note that the command will eventually start, however it will not necessarily
+     * do so immediately, and may in fact be canceled before initialize is even called.&lt;/p>
+     * @throws IllegalUseOfCommandException if the command is a part of a CommandGroup
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjVewqyvEeWRLuq1zmV17g" name="startRunning">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjWF0KyvEeWRLuq1zmV17g">
+                    <body>
+     * This is used internally to mark that the command has been started.
+     * The lifecycle of a command is:
+     *
+     * startRunning() is called.
+     * run() is called (multiple times potentially)
+     * removed() is called
+     *
+     * It is very important that startRunning and removed be called in order or some assumptions
+     * of the code will be broken.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjWs4KyvEeWRLuq1zmV17g" name="isRunning" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjWs4ayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns whether or not the command is running.
+     * This may return true even if the command has just been canceled, as it may
+     * not have yet called {@link Command#interrupted()}.
+     * @return whether or not the command is running
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjWs4qyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjXT8KyvEeWRLuq1zmV17g" name="cancel" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjXT8ayvEeWRLuq1zmV17g">
+                    <body>
+     * This will cancel the current command.
+     * &lt;p>This will cancel the current command eventually.  It can be called multiple times.
+     * And it can be called when the command is not running.  If the command is running though,
+     * then the command will be marked as canceled and eventually removed.&lt;/p>
+     * &lt;p>A command can not be canceled
+     * if it is a part of a command group, you must cancel the command group instead.&lt;/p>
+     * @throws IllegalUseOfCommandException if this command is a part of a command group
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjXT8qyvEeWRLuq1zmV17g" name="_cancel">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjXT86yvEeWRLuq1zmV17g">
+                    <body>
+     * This works like cancel(), except that it doesn't throw an exception if it is a part
+     * of a command group.  Should only be called by the parent command group.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjX7AKyvEeWRLuq1zmV17g" name="isCanceled" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjX7AayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns whether or not this has been canceled.
+     * @return whether or not this has been canceled
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjX7AqyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjYiEKyvEeWRLuq1zmV17g" name="isInterruptible" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjYiEayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns whether or not this command can be interrupted.
+     * @return whether or not this command can be interrupted
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjYiEqyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjZJIKyvEeWRLuq1zmV17g" name="setInterruptible" visibility="protected">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjZJIayvEeWRLuq1zmV17g">
+                    <body>
+     * Sets whether or not this command can be interrupted.
+     * @param interruptible whether or not this command can be interrupted
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjZwMKyvEeWRLuq1zmV17g" name="interruptible" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjZwMayvEeWRLuq1zmV17g" name="doesRequire" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjZwMqyvEeWRLuq1zmV17g">
+                    <body>
+     * Checks if the command requires the given {@link Subsystem}.
+     * @param system the system
+     * @return whether or not the subsystem is required, or false if given null
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjaXQKyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjaXQayvEeWRLuq1zmV17g" name="system" type="_wjKfoayvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wja-UKyvEeWRLuq1zmV17g" name="getGroup" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wja-UayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns the {@link CommandGroup} that this command is a part of.
+     * Will return null if this {@link Command} is not in a group.
+     * @return the {@link CommandGroup} that this command is a part of (or null if not in group)
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wja-UqyvEeWRLuq1zmV17g" type="_wi9EQKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjblYKyvEeWRLuq1zmV17g" name="setRunWhenDisabled" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjcMcKyvEeWRLuq1zmV17g">
+                    <body>
+     * Sets whether or not this {@link Command} should run when the robot is disabled.
+     *
+     * &lt;p>By default a command will not run when the robot is disabled, and will in fact be canceled.&lt;/p>
+     * @param run whether or not this command should run when the robot is disabled
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjcMcayvEeWRLuq1zmV17g" name="run" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjczgKyvEeWRLuq1zmV17g" name="willRunWhenDisabled" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjczgayvEeWRLuq1zmV17g">
+                    <body>
+     * Returns whether or not this {@link Command} will run when the robot is disabled, or if it will cancel itself.
+     * @return whether or not this {@link Command} will run when the robot is disabled, or if it will cancel itself
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjdakKyvEeWRLuq1zmV17g" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjeosKyvEeWRLuq1zmV17g" name="toString" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjeosayvEeWRLuq1zmV17g">
+                    <body>
+     * The string representation for a {@link Command} is by default its name.
+     * @return the string representation of this object
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjfPwKyvEeWRLuq1zmV17g" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjfPwayvEeWRLuq1zmV17g" name="getSmartDashboardType" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjf20KyvEeWRLuq1zmV17g" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjkvUKyvEeWRLuq1zmV17g" name="initTable" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjkvUayvEeWRLuq1zmV17g" name="table" type="_wjjhMKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_wjlWYKyvEeWRLuq1zmV17g" name="getTable" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_wjlWYayvEeWRLuq1zmV17g">
+                    <body>
+     * {@inheritDoc}
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_wjl9cKyvEeWRLuq1zmV17g" type="_wjjhMKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wi3ksKyvEeWRLuq1zmV17g" name="Set"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wi9EQKyvEeWRLuq1zmV17g" name="CommandGroup"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wjKfoayvEeWRLuq1zmV17g" name="Subsystem"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_wjgd4KyvEeWRLuq1zmV17g" name="tables">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wjgd4ayvEeWRLuq1zmV17g" name="ITableListener"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_wjjhMKyvEeWRLuq1zmV17g" name="ITable"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="__INdcKyvEeWRLuq1zmV17g" name="SpeedController" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="__IPSoKyvEeWRLuq1zmV17g">
+                <body>
+ * Interface for speed controlling devices.
+ </body>
+              </ownedComment>
+              <generalization xmi:type="uml:Generalization" xmi:id="__IP5sayvEeWRLuq1zmV17g" general="__IP5sKyvEeWRLuq1zmV17g"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="__IQgwKyvEeWRLuq1zmV17g" name="get">
+                <ownedComment xmi:type="uml:Comment" xmi:id="__IRH0KyvEeWRLuq1zmV17g">
+                  <body>
+     * Common interface for getting the current set speed of a speed controller.
+     *
+     * @return The current set speed.  Value is between -1.0 and 1.0.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="__IS9AKyvEeWRLuq1zmV17g" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="__ITkEayvEeWRLuq1zmV17g" name="set">
+                <ownedComment xmi:type="uml:Comment" xmi:id="__IULIKyvEeWRLuq1zmV17g">
+                  <body>
+     * Common interface for setting the speed of a speed controller.
+     *
+     * @param speed The speed to set.  Value should be between -1.0 and 1.0.
+     * @param syncGroup The update group to add this Set() to, pending UpdateSyncGroup().  If 0, update immediately.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="__IULIayvEeWRLuq1zmV17g" name="speed" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="__IUyMKyvEeWRLuq1zmV17g" name="syncGroup" type="__ITkEKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="__IVZQKyvEeWRLuq1zmV17g" name="set">
+                <ownedComment xmi:type="uml:Comment" xmi:id="__IVZQayvEeWRLuq1zmV17g">
+                  <body>
+     * Common interface for setting the speed of a speed controller.
+     *
+     * @param speed The speed to set.  Value should be between -1.0 and 1.0.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="__IWAUKyvEeWRLuq1zmV17g" name="speed" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="__IWAUayvEeWRLuq1zmV17g" name="disable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="__IWAUqyvEeWRLuq1zmV17g">
+                  <body>
+     * Disable the speed controller
+     </body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="__IP5sKyvEeWRLuq1zmV17g" name="PIDOutput"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_wii0kKyvEeWRLuq1zmV17g" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_wilQ0KyvEeWRLuq1zmV17g" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_wilQ0ayvEeWRLuq1zmV17g" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_wilQ0qyvEeWRLuq1zmV17g" name="String"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_wjSbcqyvEeWRLuq1zmV17g" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_wjTCgKyvEeWRLuq1zmV17g" name="Enumeration"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_wiz6UKyvEeWRLuq1zmV17g" name="datatype">
+    <packagedElement xmi:type="uml:Package" xmi:id="_wiz6UayvEeWRLuq1zmV17g" name="datatype">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wiz6UqyvEeWRLuq1zmV17g" name="Boolean"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__ITkEKyvEeWRLuq1zmV17g" name="Byte"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ldeIIKywEeWRLuq1zmV17g" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_9hJjkKywEeWRLuq1zmV17g" name="usfirst">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CiCqkKyxEeWRLuq1zmV17g" name="frc">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DmyFEKyxEeWRLuq1zmV17g" name="teamsamplesathira">
+          <packagedElement xmi:type="uml:Package" xmi:id="_MKpjkKyxEeWRLuq1zmV17g" name="robot">
+            <packagedElement xmi:type="uml:Package" xmi:id="_TJ9fEKyxEeWRLuq1zmV17g" name="subsystems"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_QeAPIKyxEeWRLuq1zmV17g" name="commands">
+              <packagedElement xmi:type="uml:Class" xmi:id="_4e4HEKyxEeWRLuq1zmV17g" name="SetElevatorSetpoint" visibility="public">
+                <generalization xmi:type="uml:Generalization" xmi:id="_QeE1sKyzEeWRLuq1zmV17g" general="_wiLoMKyvEeWRLuq1zmV17g"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_b6QakKyyEeWRLuq1zmV17g" name="setpoint" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6khIcKyyEeWRLuq1zmV17g" name="SetElevatorSetPoint">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6khIcayyEeWRLuq1zmV17g" name="setpoint">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_tCsFsKyzEeWRLuq1zmV17g" name="OpenClaw">
+                <generalization xmi:type="uml:Generalization" xmi:id="_gfEXoKy0EeWRLuq1zmV17g" general="_wiLoMKyvEeWRLuq1zmV17g"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_5HAzMKyzEeWRLuq1zmV17g" name="OpenClaw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_MGbOEKy1EeWRLuq1zmV17g" name="CloseClaw">
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_ZkiZAKy1EeWRLuq1zmV17g" name="CloseClaw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_6Pw5EKy1EeWRLuq1zmV17g" name="SetWristSetPoint">
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_CLQwAKy2EeWRLuq1zmV17g" name="SetWristSetPoint"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BAbxEKy1EeWRLuq1zmV17g" memberEnd="_BAcYIqy1EeWRLuq1zmV17g _BAc_MKy1EeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BAcYIKy1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BAcYIay1EeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BAcYIqy1EeWRLuq1zmV17g" name="close claw" type="_7nWzkKy0EeWRLuq1zmV17g" association="_BAbxEKy1EeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BAc_MKy1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_BAbxEKy1EeWRLuq1zmV17g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vtP8kKy1EeWRLuq1zmV17g" memberEnd="_vtRKsKy1EeWRLuq1zmV17g _vtRKsay1EeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vtQjoKy1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vtQjoay1EeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vtRKsKy1EeWRLuq1zmV17g" name="raise wrist" type="_q_qMEKy1EeWRLuq1zmV17g" association="_vtP8kKy1EeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vtRKsay1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_vtP8kKy1EeWRLuq1zmV17g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_w5o3MKy1EeWRLuq1zmV17g" memberEnd="_w5peQay1EeWRLuq1zmV17g _w5peQqy1EeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w5o3May1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w5peQKy1EeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w5peQay1EeWRLuq1zmV17g" name="lower wrist" type="_tPZaEKy1EeWRLuq1zmV17g" association="_w5o3MKy1EeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w5peQqy1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_w5o3MKy1EeWRLuq1zmV17g"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__A7boKytEeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__A-e8KytEeWRLuq1zmV17g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </profileApplication>
+</uml:Model>
