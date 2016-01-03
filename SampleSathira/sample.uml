@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9K_QIKc7EeWje-SERfz6BA" name="RootElement">
-  <packagedElement xmi:type="uml:Actor" xmi:id="_PLPuIKyuEeWRLuq1zmV17g" name="Tool-Op"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_PLPuIKyuEeWRLuq1zmV17g" name="Tool-Op">
+    <generalization xmi:type="uml:Generalization" xmi:id="_yhNNgLI9EeWFDNAB7NR6BA" general="_rkZzcLI9EeWFDNAB7NR6BA"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_YAR1IKyuEeWRLuq1zmV17g" name="Robot">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_dRDyQKyuEeWRLuq1zmV17g" name="Elevaotr Up"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dRDyQKyuEeWRLuq1zmV17g" name="Elevator Up"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_jur9AKyuEeWRLuq1zmV17g" name="Elevator Down"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_q2dQ8KyuEeWRLuq1zmV17g" name="Open Claw"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_7nWzkKy0EeWRLuq1zmV17g" name="Close Claw"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_q_qMEKy1EeWRLuq1zmV17g" name="Raise Wrist"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_tPZaEKy1EeWRLuq1zmV17g" name="Lower Wrist"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qdE1gLFtEeWFDNAB7NR6BA" name="Tank Drive"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tklxQLI3EeWFDNAB7NR6BA" name="Pickup">
+      <include xmi:type="uml:Include" xmi:id="_5JuBULI3EeWFDNAB7NR6BA" addition="_7nWzkKy0EeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_-pgq0LI3EeWFDNAB7NR6BA" addition="_q_qMEKy1EeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_EyCIQLI4EeWFDNAB7NR6BA" addition="_dRDyQKyuEeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_T3_6cLI7EeWFDNAB7NR6BA" addition="_7nWzkKy0EeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_Ud-8YLI7EeWFDNAB7NR6BA" addition="_q_qMEKy1EeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_VEW_4LI7EeWFDNAB7NR6BA" addition="_dRDyQKyuEeWRLuq1zmV17g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Jjg6QLI4EeWFDNAB7NR6BA" name="Place">
+      <include xmi:type="uml:Include" xmi:id="_ezUqcLI5EeWFDNAB7NR6BA" addition="_q2dQ8KyuEeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_holnYLI5EeWFDNAB7NR6BA" addition="_tPZaEKy1EeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_83SX4LI6EeWFDNAB7NR6BA" addition="_q2dQ8KyuEeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_9mlt4LI6EeWFDNAB7NR6BA" addition="_tPZaEKy1EeWRLuq1zmV17g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4KBCYLI4EeWFDNAB7NR6BA" name="Autnomous">
+      <include xmi:type="uml:Include" xmi:id="_6zEWALI9EeWFDNAB7NR6BA" addition="_A3yDwLI5EeWFDNAB7NR6BA"/>
+      <include xmi:type="uml:Include" xmi:id="_B0SWALI-EeWFDNAB7NR6BA" addition="_tklxQLI3EeWFDNAB7NR6BA"/>
+      <include xmi:type="uml:Include" xmi:id="_CYTCALI-EeWFDNAB7NR6BA" addition="_H_GrwLI5EeWFDNAB7NR6BA"/>
+      <include xmi:type="uml:Include" xmi:id="_C4aFcLI-EeWFDNAB7NR6BA" addition="_Jjg6QLI4EeWFDNAB7NR6BA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_A3yDwLI5EeWFDNAB7NR6BA" name="PreparetoPickup"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_H_GrwLI5EeWFDNAB7NR6BA" name="SetDistanceToBox"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-Rik0LI5EeWFDNAB7NR6BA" name="PrepareToPickup">
+      <include xmi:type="uml:Include" xmi:id="_CAkbULI6EeWFDNAB7NR6BA" addition="_jur9AKyuEeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_FxNbYLI6EeWFDNAB7NR6BA" addition="_tPZaEKy1EeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_nJv38LI7EeWFDNAB7NR6BA" addition="_tPZaEKy1EeWRLuq1zmV17g"/>
+      <include xmi:type="uml:Include" xmi:id="_nkX-cLI7EeWFDNAB7NR6BA" addition="_q2dQ8KyuEeWRLuq1zmV17g"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_1nDFsKyuEeWRLuq1zmV17g" memberEnd="_1nM2sKyuEeWRLuq1zmV17g _1nOE0KyuEeWRLuq1zmV17g">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1nFh8KyuEeWRLuq1zmV17g" source="org.eclipse.papyrus">
@@ -479,7 +510,330 @@
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_wi3ksKyvEeWRLuq1zmV17g" name="Set"/>
               <packagedElement xmi:type="uml:Class" xmi:id="_wi9EQKyvEeWRLuq1zmV17g" name="CommandGroup"/>
-              <packagedElement xmi:type="uml:Class" xmi:id="_wjKfoayvEeWRLuq1zmV17g" name="Subsystem"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_wjKfoayvEeWRLuq1zmV17g" name="Subsystem" visibility="public" isAbstract="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LWvU8LJEEeWFDNAB7NR6BA">
+                  <body>
+ * This class defines a major component of the robot.
+ *
+ * &lt;p>A good example of a subsystem is the driveline, or a claw if the robot has one.&lt;/p>
+ *
+ * &lt;p>All motors should be a part of a subsystem. For instance, all the wheel motors should be
+ * a part of some kind of &quot;Driveline&quot; subsystem.&lt;/p>
+ *
+ * &lt;p>Subsystems are used within the command system as requirements for {@link Command}.
+ * Only one command which requires a subsystem can run at a time.  Also, subsystems
+ * can have default commands which are started if there is no command running which
+ * requires this subsystem.&lt;/p>
+ *
+ * @author Joe Grinstead
+ * @see Command
+ </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_LWxKILJEEeWFDNAB7NR6BA" name="initializedDefaultCommand" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LWxKIbJEEeWFDNAB7NR6BA">
+                    <body> Whether or not getDefaultCommand() was called </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_LWxKIrJEEeWFDNAB7NR6BA" name="currentCommand" visibility="private" type="_wiLoMKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LWxxMLJEEeWFDNAB7NR6BA">
+                    <body> The current command </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_LWxxMbJEEeWFDNAB7NR6BA" name="currentCommandChanged" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_LWyYQLJEEeWFDNAB7NR6BA" name="defaultCommand" visibility="private" type="_wiLoMKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LWyYQbJEEeWFDNAB7NR6BA">
+                    <body> The default command </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_LWyYQrJEEeWFDNAB7NR6BA" name="name" visibility="private" type="_wilQ0qyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LWy_ULJEEeWFDNAB7NR6BA">
+                    <body> The name </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_LWy_UrJEEeWFDNAB7NR6BA" name="allSubsystems" visibility="private" isStatic="true" type="_LWy_UbJEEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LWzmYLJEEeWFDNAB7NR6BA">
+                    <body> List of all subsystems created </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_LW330LJEEeWFDNAB7NR6BA" name="table" visibility="private" type="_wjjhMKyvEeWRLuq1zmV17g" isUnique="false"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LWv8ALJEEeWFDNAB7NR6BA" name="Subsystem implements NamedSendable" client="_wjKfoayvEeWRLuq1zmV17g" supplier="_wiQgsKyvEeWRLuq1zmV17g" contract="_wiQgsKyvEeWRLuq1zmV17g"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LWzmYbJEEeWFDNAB7NR6BA" name="initDefaultCommand" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LWzmYrJEEeWFDNAB7NR6BA">
+                    <body>
+     * Initialize the default command for a subsystem
+     * By default subsystems have no default command, but if they do, the default command is set
+     * with this method. It is called on all Subsystems by CommandBase in the users program after
+     * all the Subsystems are created.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LWzmY7JEEeWFDNAB7NR6BA" name="setDefaultCommand" visibility="protected">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LWzmZLJEEeWFDNAB7NR6BA">
+                    <body>
+     * Sets the default command.  If this is not called or is called with null,
+     * then there will be no default command for the subsystem.
+     *
+     * &lt;p>&lt;b>WARNING:&lt;/b> This should &lt;b>NOT&lt;/b> be called in a constructor if the subsystem is a
+     * singleton.&lt;/p>
+     *
+     * @param command the default command (or null if there should be none)
+     * @throws IllegalUseOfCommandException if the command does not require the subsystem
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW0NcLJEEeWFDNAB7NR6BA" name="command" type="_wiLoMKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW0NcbJEEeWFDNAB7NR6BA" name="getDefaultCommand" visibility="protected">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LW00gLJEEeWFDNAB7NR6BA">
+                    <body>
+     * Returns the default command (or null if there is none).
+     * @return the default command
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW00gbJEEeWFDNAB7NR6BA" type="_wiLoMKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW00grJEEeWFDNAB7NR6BA" name="setCurrentCommand">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LW00g7JEEeWFDNAB7NR6BA">
+                    <body>
+     * Sets the current command
+     * @param command the new current command
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW1bkLJEEeWFDNAB7NR6BA" name="command" type="_wiLoMKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW1bkbJEEeWFDNAB7NR6BA" name="confirmCommand">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LW2CoLJEEeWFDNAB7NR6BA">
+                    <body>
+     * Call this to alert Subsystem that the current command is actually the command.
+     * Sometimes, the {@link Subsystem} is told that it has no command while the {@link Scheduler}
+     * is going through the loop, only to be soon after given a new one.  This will avoid that situation.
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW2CobJEEeWFDNAB7NR6BA" name="getCurrentCommand" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LW2CorJEEeWFDNAB7NR6BA">
+                    <body>
+     * Returns the command which currently claims this subsystem.
+     * @return the command which currently claims this subsystem
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW2Co7JEEeWFDNAB7NR6BA" type="_wiLoMKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW2psLJEEeWFDNAB7NR6BA" name="toString" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW2psbJEEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW2psrJEEeWFDNAB7NR6BA" name="getName" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LW3QwLJEEeWFDNAB7NR6BA">
+                    <body>
+     * Returns the name of this subsystem, which is by default the class name.
+     * @return the name of this subsystem
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW3QwbJEEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW3QwrJEEeWFDNAB7NR6BA" name="getSmartDashboardType" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW3Qw7JEEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW330bJEEeWFDNAB7NR6BA" name="initTable" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW5F8LJEEeWFDNAB7NR6BA" name="table" type="_wjjhMKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_LW5tALJEEeWFDNAB7NR6BA" name="getTable" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_LW5tAbJEEeWFDNAB7NR6BA">
+                    <body>
+     * {@inheritDoc}
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_LW5tArJEEeWFDNAB7NR6BA" type="_wjjhMKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_H18uwLJEEeWFDNAB7NR6BA" name="PIDSubsystem" visibility="public" isAbstract="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_H1984LJEEeWFDNAB7NR6BA">
+                  <body>
+ * This class is designed to handle the case where there is a {@link Subsystem}
+ * which uses a single {@link PIDController} almost constantly (for instance,
+ * an elevator which attempts to stay at a constant height).
+ *
+ * &lt;p>It provides some convenience methods to run an internal {@link PIDController}.
+ * It also allows access to the internal {@link PIDController} in order to give total control
+ * to the programmer.&lt;/p>
+ *
+ * @author Joe Grinstead
+ </body>
+                </ownedComment>
+                <generalization xmi:type="uml:Generalization" xmi:id="_H1984bJEEeWFDNAB7NR6BA" general="_wjKfoayvEeWRLuq1zmV17g"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_H1_yELJEEeWFDNAB7NR6BA" name="controller" visibility="private" type="_H1_LALJEEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H1_yEbJEEeWFDNAB7NR6BA">
+                    <body> The internal {@link PIDController} </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_H1_yErJEEeWFDNAB7NR6BA" name="output" visibility="private" type="__IP5sKyvEeWRLuq1zmV17g" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2AZILJEEeWFDNAB7NR6BA">
+                    <body> An output which calls {@link PIDCommand#usePIDOutput(double)} </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_H2AZIrJEEeWFDNAB7NR6BA" name="source" visibility="private" type="_H2AZIbJEEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2BAMLJEEeWFDNAB7NR6BA">
+                    <body> A source which calls {@link PIDCommand#returnPIDInput()} </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-LeioLJFEeWFDNAB7NR6BA" name="Contact" visibility="private" type="_uS0A0LJFEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_i5bmYLJIEeWFDNAB7NR6BA" name="pot" visibility="private" type="_6B0TsLJHEeWFDNAB7NR6BA"/>
+                <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_H1-j8LJEEeWFDNAB7NR6BA" name="PIDSubsystem implements Sendable" client="_H18uwLJEEeWFDNAB7NR6BA" supplier="_H1984rJEEeWFDNAB7NR6BA" contract="_H1984rJEEeWFDNAB7NR6BA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2BAMbJEEeWFDNAB7NR6BA" name="getPIDController" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2BAMrJEEeWFDNAB7NR6BA">
+                    <body>
+     * Returns the {@link PIDController} used by this {@link PIDSubsystem}.
+     * Use this if you would like to fine tune the pid loop.
+     *
+     * @return the {@link PIDController} used by this {@link PIDSubsystem}
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2BAM7JEEeWFDNAB7NR6BA" type="_H1_LALJEEeWFDNAB7NR6BA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2BnQLJEEeWFDNAB7NR6BA" name="setSetpointRelative" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2BnQbJEEeWFDNAB7NR6BA">
+                    <body>
+     * Adds the given value to the setpoint.
+     * If {@link PIDSubsystem#setInputRange(double, double) setInputRange(...)} was used,
+     * then the bounds will still be honored by this method.
+     * @param deltaSetpoint the change in the setpoint
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2BnQrJEEeWFDNAB7NR6BA" name="deltaSetpoint" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2COULJEEeWFDNAB7NR6BA" name="setSetpoint" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2COUbJEEeWFDNAB7NR6BA">
+                    <body>
+     * Sets the setpoint to the given value.  If {@link PIDSubsystem#setInputRange(double, double) setInputRange(...)}
+     * was called,
+     * then the given setpoint
+     * will be trimmed to fit within the range.
+     * @param setpoint the new setpoint
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2COUrJEEeWFDNAB7NR6BA" name="setpoint" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2COU7JEEeWFDNAB7NR6BA" name="getSetpoint" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2C1YLJEEeWFDNAB7NR6BA">
+                    <body>
+     * Returns the setpoint.
+     * @return the setpoint
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2C1YbJEEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2C1YrJEEeWFDNAB7NR6BA" name="getPosition" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2C1Y7JEEeWFDNAB7NR6BA">
+                    <body>
+     * Returns the current position
+     * @return the current position
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2DccLJEEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2DccbJEEeWFDNAB7NR6BA" name="setInputRange" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2DccrJEEeWFDNAB7NR6BA">
+                    <body>
+     * Sets the maximum and minimum values expected from the input.
+     *
+     * @param minimumInput the minimum value expected from the input
+     * @param maximumInput the maximum value expected from the output
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2Dcc7JEEeWFDNAB7NR6BA" name="minimumInput" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2EDgLJEEeWFDNAB7NR6BA" name="maximumInput" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2EDgbJEEeWFDNAB7NR6BA" name="setOutputRange" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2EDgrJEEeWFDNAB7NR6BA">
+                    <body>
+     * Sets the maximum and minimum values to write.
+     *
+     * @param minimumOutput the minimum value to write to the output
+     * @param maximumOutput the maximum value to write to the output
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2FRoLJEEeWFDNAB7NR6BA" name="minimumOutput" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2FRobJEEeWFDNAB7NR6BA" name="maximumOutput" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2F4sLJEEeWFDNAB7NR6BA" name="setAbsoluteTolerance" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2F4sbJEEeWFDNAB7NR6BA">
+                    <body>
+    * Set the absolute error which is considered tolerable for use with
+    * OnTarget. The value is in the same range as the PIDInput values.
+    * @param t the absolute tolerance
+    </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2GfwLJEEeWFDNAB7NR6BA" name="t" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2GfwbJEEeWFDNAB7NR6BA" name="setPercentTolerance" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2GfwrJEEeWFDNAB7NR6BA">
+                    <body>
+    * Set the percentage error which is considered tolerable for use with
+    * OnTarget. (Value of 15.0 == 15 percent)
+    * @param p the percent tolerance
+    </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2HG0LJEEeWFDNAB7NR6BA" name="p" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2HG0bJEEeWFDNAB7NR6BA" name="onTarget" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2HG0rJEEeWFDNAB7NR6BA">
+                    <body>
+     * Return true if the error is within the percentage of the total input range,
+     * determined by setTolerance. This assumes that the maximum and minimum input
+     * were set using setInput.
+     * @return true if the error is less than the tolerance
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2Ht4LJEEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2Ht4bJEEeWFDNAB7NR6BA" name="returnPIDInput" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2Ht4rJEEeWFDNAB7NR6BA">
+                    <body>
+     * Returns the input for the pid loop.
+     *
+     * &lt;p>It returns the input for the pid loop, so if this Subsystem was based
+     * off of a gyro, then it should return the angle of the gyro&lt;/p>
+     *
+     * &lt;p>All subclasses of {@link PIDSubsystem} must override this method.&lt;/p>
+     *
+     * @return the value the pid loop should use as input
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2IU8LJEEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2IU8bJEEeWFDNAB7NR6BA" name="usePIDOutput" visibility="protected" isAbstract="true">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2IU8rJEEeWFDNAB7NR6BA">
+                    <body>
+     * Uses the value that the pid loop calculated.  The calculated value is the &quot;output&quot; parameter.
+     * This method is a good time to set motor values, maybe something along the lines of &lt;code>driveline.tankDrive(output, -output)&lt;/code>
+     *
+     * &lt;p>All subclasses of {@link PIDSubsystem} must override this method.&lt;/p>
+     *
+     * @param output the value the pid loop calculated
+     </body>
+                  </ownedComment>
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2I8ALJEEeWFDNAB7NR6BA" name="output" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2I8AbJEEeWFDNAB7NR6BA" name="enable" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2I8ArJEEeWFDNAB7NR6BA">
+                    <body>
+     * Enables the internal {@link PIDController}
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2JjELJEEeWFDNAB7NR6BA" name="disable" visibility="public">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_H2JjEbJEEeWFDNAB7NR6BA">
+                    <body>
+     * Disables the internal {@link PIDController}
+     </body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2JjErJEEeWFDNAB7NR6BA" name="getSmartDashboardType" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2JjE7JEEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_H2KKILJEEeWFDNAB7NR6BA" name="initTable" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_H2KKIbJEEeWFDNAB7NR6BA" name="table" type="_wjjhMKyvEeWRLuq1zmV17g"/>
+                </ownedOperation>
+              </packagedElement>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_wjgd4KyvEeWRLuq1zmV17g" name="tables">
               <packagedElement xmi:type="uml:Interface" xmi:id="_wjgd4ayvEeWRLuq1zmV17g" name="ITableListener"/>
@@ -533,10 +887,2120 @@
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Interface" xmi:id="__IP5sKyvEeWRLuq1zmV17g" name="PIDOutput"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-ebtILJAEeWFDNAB7NR6BA" name="Joystick" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_-ecUMLJAEeWFDNAB7NR6BA">
+                <body>
+ * Handle input from standard Joysticks connected to the Driver Station.
+ * This class handles standard input that comes from the Driver Station. Each time a value is requested
+ * the most recent value is returned. There is a single class instance for each joystick and the mapping
+ * of ports to hardware buttons depends on the code in the driver station.
+ </body>
+              </ownedComment>
+              <generalization xmi:type="uml:Generalization" xmi:id="_-ec7QbJAEeWFDNAB7NR6BA" general="_-ec7QLJAEeWFDNAB7NR6BA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-ediULJAEeWFDNAB7NR6BA" name="kDefaultXAxis" isLeaf="true" isStatic="true" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-eeJYLJAEeWFDNAB7NR6BA" name="kDefaultYAxis" isLeaf="true" isStatic="true" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-eewcLJAEeWFDNAB7NR6BA" name="kDefaultZAxis" isLeaf="true" isStatic="true" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-efXgLJAEeWFDNAB7NR6BA" name="kDefaultTwistAxis" isLeaf="true" isStatic="true" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-ef-kLJAEeWFDNAB7NR6BA" name="kDefaultThrottleAxis" isLeaf="true" isStatic="true" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-egloLJAEeWFDNAB7NR6BA" name="kDefaultTriggerButton" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-ehMsLJAEeWFDNAB7NR6BA" name="kDefaultTopButton" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-e0usLJAEeWFDNAB7NR6BA" name="m_ds" visibility="private" type="_-e0HoLJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-e1VwLJAEeWFDNAB7NR6BA" name="m_port" visibility="private" isLeaf="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-e180LJAEeWFDNAB7NR6BA" name="m_axes" visibility="private" isLeaf="true" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-e180bJAEeWFDNAB7NR6BA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-e2j4LJAEeWFDNAB7NR6BA" value="*"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-e2j4bJAEeWFDNAB7NR6BA" name="m_buttons" visibility="private" isLeaf="true" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-e3K8LJAEeWFDNAB7NR6BA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-e3K8bJAEeWFDNAB7NR6BA" value="*"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-e3yALJAEeWFDNAB7NR6BA" name="m_outputs" visibility="private" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-e4ZELJAEeWFDNAB7NR6BA" name="m_leftRumble" visibility="private" type="_-e3yAbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_-e4ZEbJAEeWFDNAB7NR6BA" name="m_rightRumble" visibility="private" type="_-e3yAbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-e5nMbJAEeWFDNAB7NR6BA" name="getX" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-e5nMrJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the X value of the joystick.
+     * This depends on the mapping of the joystick connected to the current port.
+     *
+     * @param hand Unused
+     * @return The X value of the joystick.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e6OQLJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e61ULJAEeWFDNAB7NR6BA" name="hand" type="_-e5nMLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-e61UbJAEeWFDNAB7NR6BA" name="getY" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-e61UrJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the Y value of the joystick.
+     * This depends on the mapping of the joystick connected to the current port.
+     *
+     * @param hand Unused
+     * @return The Y value of the joystick.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e7cYLJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e7cYbJAEeWFDNAB7NR6BA" name="hand" type="_-e5nMLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-e8DcLJAEeWFDNAB7NR6BA" name="getZ" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-e8DcbJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the Z value of the joystick.
+     * This depends on the mapping of the joystick connected to the current port.
+     *
+     * @param hand Unused
+     * @return The Z value of the joystick.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e8DcrJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e8qgLJAEeWFDNAB7NR6BA" name="hand" type="_-e5nMLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-e8qgbJAEeWFDNAB7NR6BA" name="getTwist" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-e9RkLJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the twist value of the current joystick.
+     * This depends on the mapping of the joystick connected to the current port.
+     *
+     * @return The Twist value of the joystick.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e9RkbJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-e9RkrJAEeWFDNAB7NR6BA" name="getThrottle" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-e94oLJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the throttle value of the current joystick.
+     * This depends on the mapping of the joystick connected to the current port.
+     *
+     * @return The Throttle value of the joystick.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e94obJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-e94orJAEeWFDNAB7NR6BA" name="getRawAxis" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-e-fsLJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the value of the axis.
+     *
+     * @param axis The axis to read, starting at 0.
+     * @return The value of the axis.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e-fsbJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-e_GwLJAEeWFDNAB7NR6BA" name="axis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-e_t0bJAEeWFDNAB7NR6BA" name="getAxis" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-e_t0rJAEeWFDNAB7NR6BA">
+                  <body>
+     * For the current joystick, return the axis determined by the argument.
+     *
+     * This is for cases where the joystick axis is returned programatically, otherwise one of the
+     * previous functions would be preferable (for example getX()).
+     *
+     * @param axis The axis to read.
+     * @return The value of the axis.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fAU4LJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fAU4bJAEeWFDNAB7NR6BA" name="axis" type="_-e_t0LJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fA78LJAEeWFDNAB7NR6BA" name="getAxisCount" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fA78bJAEeWFDNAB7NR6BA">
+                  <body>
+    * For the current joystick, return the number of axis
+    </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fA78rJAEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fBjALJAEeWFDNAB7NR6BA" name="getTrigger" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fBjAbJAEeWFDNAB7NR6BA">
+                  <body>
+     * Read the state of the trigger on the joystick.
+     *
+     * Look up which button has been assigned to the trigger and read its state.
+     *
+     * @param hand This parameter is ignored for the Joystick class and is only here to complete the GenericHID interface.
+     * @return The state of the trigger.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fBjArJAEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fCKELJAEeWFDNAB7NR6BA" name="hand" type="_-e5nMLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fCKEbJAEeWFDNAB7NR6BA" name="getTop" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fCKErJAEeWFDNAB7NR6BA">
+                  <body>
+     * Read the state of the top button on the joystick.
+     *
+     * Look up which button has been assigned to the top and read its state.
+     *
+     * @param hand This parameter is ignored for the Joystick class and is only here to complete the GenericHID interface.
+     * @return The state of the top button.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fCxILJAEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fCxIbJAEeWFDNAB7NR6BA" name="hand" type="_-e5nMLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fDYMLJAEeWFDNAB7NR6BA" name="getBumper" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fDYMbJAEeWFDNAB7NR6BA">
+                  <body>
+     * This is not supported for the Joystick.
+     * This method is only here to complete the GenericHID interface.
+     *
+     * @param hand This parameter is ignored for the Joystick class and is only here to complete the GenericHID interface.
+     * @return The state of the bumper (always false)
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fDYMrJAEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fD_QLJAEeWFDNAB7NR6BA" name="hand" type="_-e5nMLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fD_QbJAEeWFDNAB7NR6BA" name="getRawButton" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fEmULJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the button value (starting at button 1)
+     *
+     * The appropriate button is returned as a boolean value.
+     *
+     * @param button The button number to be read (starting at 1).
+     * @return The state of the button.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fEmUbJAEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fFNYLJAEeWFDNAB7NR6BA" name="button" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fFNYbJAEeWFDNAB7NR6BA" name="getButtonCount" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fF0cLJAEeWFDNAB7NR6BA">
+                  <body>
+    * For the current joystick, return the number of buttons
+    </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fF0cbJAEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fGbgLJAEeWFDNAB7NR6BA" name="getPOV" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fGbgbJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the state of a POV on the joystick.
+     *
+	 * @param pov The index of the POV to read (starting at 0)
+     * @return the angle of the POV in degrees, or -1 if the POV is not pressed.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fGbgrJAEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fHCkLJAEeWFDNAB7NR6BA" name="pov" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fHCkbJAEeWFDNAB7NR6BA" name="getPOVCount" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fHpoLJAEeWFDNAB7NR6BA">
+                  <body>
+    * For the current joystick, return the number of POVs
+    </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fHpobJAEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fIQsLJAEeWFDNAB7NR6BA" name="getButton" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fIQsbJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get buttons based on an enumerated type.
+     *
+     * The button type will be looked up in the list of buttons and then read.
+     *
+     * @param button The type of button to read.
+     * @return The state of the button.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fIQsrJAEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fI3wLJAEeWFDNAB7NR6BA" name="button" type="_-fHporJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fI3wbJAEeWFDNAB7NR6BA" name="getMagnitude" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fI3wrJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the magnitude of the direction vector formed by the joystick's
+     * current position relative to its origin
+     *
+     * @return The magnitude of the direction vector
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fI3w7JAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fJe0LJAEeWFDNAB7NR6BA" name="getDirectionRadians" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fJe0bJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the direction of the vector formed by the joystick and its origin
+     * in radians
+     *
+     * @return The direction of the vector in radians
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fJe0rJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fJe07JAEeWFDNAB7NR6BA" name="getDirectionDegrees" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fKF4LJAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the direction of the vector formed by the joystick and its origin
+     * in degrees
+     *
+     * uses acos(-1) to represent Pi due to absence of readily accessable Pi
+     * constant in C++
+     *
+     * @return The direction of the vector in degrees
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fKF4bJAEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fKF4rJAEeWFDNAB7NR6BA" name="getAxisChannel" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fKF47JAEeWFDNAB7NR6BA">
+                  <body>
+     * Get the channel currently associated with the specified axis.
+     *
+     * @param axis The axis to look up the channel for.
+     * @return The channel fr the axis.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fKs8LJAEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fKs8bJAEeWFDNAB7NR6BA" name="axis" type="_-e_t0LJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fLUALJAEeWFDNAB7NR6BA" name="setAxisChannel" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fLUAbJAEeWFDNAB7NR6BA">
+                  <body>
+     * Set the channel associated with a specified axis.
+     *
+     * @param axis The axis to set the channel for.
+     * @param channel The channel to set the axis to.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fLUArJAEeWFDNAB7NR6BA" name="axis" type="_-e_t0LJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fL7ELJAEeWFDNAB7NR6BA" name="channel" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fMiIbJAEeWFDNAB7NR6BA" name="setRumble" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fMiIrJAEeWFDNAB7NR6BA">
+                  <body>
+     * Set the rumble output for the joystick. The DS currently supports 2 rumble values,
+     * left rumble and right rumble
+     * @param type Which rumble value to set
+     * @param value The normalized value (0 to 1) to set the rumble to
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fNJMLJAEeWFDNAB7NR6BA" name="type" type="_-fL7EbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fNJMbJAEeWFDNAB7NR6BA" name="value" type="_-fMiILJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fNJMrJAEeWFDNAB7NR6BA" name="setOutput" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fNwQLJAEeWFDNAB7NR6BA">
+                  <body>
+     * Set a single HID output value for the joystick.
+     * @param outputNumber The index of the output to set (1-32)
+     * @param value The value to set the output to
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fNwQbJAEeWFDNAB7NR6BA" name="outputNumber" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fOXULJAEeWFDNAB7NR6BA" name="value" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_-fOXUbJAEeWFDNAB7NR6BA" name="setOutputs" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-fOXUrJAEeWFDNAB7NR6BA">
+                  <body>
+     * Set all HID output values for the joystick.
+     * @param value The 32 bit output value (1 bit for each output)
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_-fO-YLJAEeWFDNAB7NR6BA" name="value" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_-ehzwLJAEeWFDNAB7NR6BA" name="AxisType" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-eia0LJAEeWFDNAB7NR6BA">
+                  <body>
+     * Represents an analog axis on a joystick.
+     </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-eia0bJAEeWFDNAB7NR6BA" name="value" visibility="public" isLeaf="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-ejB4LJAEeWFDNAB7NR6BA">
+                    <body>
+         * The integer value representing this enumeration
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-ejo8LJAEeWFDNAB7NR6BA" name="kX_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-ejo8bJAEeWFDNAB7NR6BA" name="kY_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-ekQALJAEeWFDNAB7NR6BA" name="kZ_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-ek3ELJAEeWFDNAB7NR6BA" name="kTwist_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-ek3EbJAEeWFDNAB7NR6BA" name="kThrottle_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-eleILJAEeWFDNAB7NR6BA" name="kNumAxis_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-emFMLJAEeWFDNAB7NR6BA" name="kX" visibility="public" isLeaf="true" isStatic="true" type="_-ehzwLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-emsQLJAEeWFDNAB7NR6BA">
+                    <body>
+         * axis: x-axis
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-enTULJAEeWFDNAB7NR6BA" name="kY" visibility="public" isLeaf="true" isStatic="true" type="_-ehzwLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-enTUbJAEeWFDNAB7NR6BA">
+                    <body>
+         * axis: y-axis
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-en6YLJAEeWFDNAB7NR6BA" name="kZ" visibility="public" isLeaf="true" isStatic="true" type="_-ehzwLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-en6YbJAEeWFDNAB7NR6BA">
+                    <body>
+         * axis: z-axis
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-eohcLJAEeWFDNAB7NR6BA" name="kTwist" visibility="public" isLeaf="true" isStatic="true" type="_-ehzwLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-eohcbJAEeWFDNAB7NR6BA">
+                    <body>
+         * axis: twist
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-epIgLJAEeWFDNAB7NR6BA" name="kThrottle" visibility="public" isLeaf="true" isStatic="true" type="_-ehzwLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-epvkLJAEeWFDNAB7NR6BA">
+                    <body>
+         * axis: throttle
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-eqWoLJAEeWFDNAB7NR6BA" name="kNumAxis" visibility="public" isLeaf="true" isStatic="true" type="_-ehzwLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-eq9sLJAEeWFDNAB7NR6BA">
+                    <body>
+         * axis: number of axis
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_-eq9sbJAEeWFDNAB7NR6BA" name="ButtonType" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-erkwLJAEeWFDNAB7NR6BA">
+                  <body>
+     * Represents a digital button on the JoyStick
+     </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-erkwbJAEeWFDNAB7NR6BA" name="value" visibility="public" isLeaf="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-esL0LJAEeWFDNAB7NR6BA">
+                    <body>
+         * The integer value representing this enumeration
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-esL0bJAEeWFDNAB7NR6BA" name="kTrigger_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-esy4LJAEeWFDNAB7NR6BA" name="kTop_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-etZ8LJAEeWFDNAB7NR6BA" name="kNumButton_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-euBALJAEeWFDNAB7NR6BA" name="kTrigger" visibility="public" isLeaf="true" isStatic="true" type="_-eq9sbJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-euoELJAEeWFDNAB7NR6BA">
+                    <body>
+         * button: trigger
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-evPILJAEeWFDNAB7NR6BA" name="kTop" visibility="public" isLeaf="true" isStatic="true" type="_-eq9sbJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-evPIbJAEeWFDNAB7NR6BA">
+                    <body>
+         * button: top button
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-ev2MLJAEeWFDNAB7NR6BA" name="kNumButton" visibility="public" isLeaf="true" isStatic="true" type="_-eq9sbJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-ev2MbJAEeWFDNAB7NR6BA">
+                    <body>
+         * button: num button types
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_-ewdQLJAEeWFDNAB7NR6BA" name="RumbleType" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_-ewdQbJAEeWFDNAB7NR6BA">
+                  <body>
+     * Represents a rumble output on the JoyStick
+     </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-exEULJAEeWFDNAB7NR6BA" name="value" visibility="public" isLeaf="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-exEUbJAEeWFDNAB7NR6BA">
+                    <body>
+         * The integer value representing this enumeration
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-exrYLJAEeWFDNAB7NR6BA" name="kLeftRumble_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-eyScLJAEeWFDNAB7NR6BA" name="kRightRumble_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-eyScbJAEeWFDNAB7NR6BA" name="kLeftRumble" visibility="public" isLeaf="true" isStatic="true" type="_-ewdQLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-ey5gLJAEeWFDNAB7NR6BA">
+                    <body>
+         * Left Rumble
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_-ezgkLJAEeWFDNAB7NR6BA" name="kRightRumble" visibility="public" isLeaf="true" isStatic="true" type="_-ewdQLJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-ezgkbJAEeWFDNAB7NR6BA">
+                    <body>
+         * Right Rumble
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+              </nestedClassifier>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-ec7QLJAEeWFDNAB7NR6BA" name="GenericHID"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-e0HoLJAEeWFDNAB7NR6BA" name="DriverStation"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-e5nMLJAEeWFDNAB7NR6BA" name="Hand"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-e_t0LJAEeWFDNAB7NR6BA" name="AxisType"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-fHporJAEeWFDNAB7NR6BA" name="ButtonType"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-fL7EbJAEeWFDNAB7NR6BA" name="RumbleType"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_hH3w4LJCEeWFDNAB7NR6BA" name="IterativeRobot" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_hH4_ALJCEeWFDNAB7NR6BA">
+                <body>
+ * IterativeRobot implements a specific type of Robot Program framework, extending the RobotBase class.
+ *
+ * The IterativeRobot class is intended to be subclassed by a user creating a robot program.
+ *
+ * This class is intended to implement the &quot;old style&quot; default code, by providing
+ * the following functions which are called by the main loop, startCompetition(), at the appropriate times:
+ *
+ * robotInit() -- provide for initialization at robot power-on
+ *
+ * init() functions -- each of the following functions is called once when the
+ *                     appropriate mode is entered:
+ *  - DisabledInit()   -- called only when first disabled
+ *  - AutonomousInit() -- called each and every time autonomous is entered from another mode
+ *  - TeleopInit()     -- called each and every time teleop is entered from another mode
+ *  - TestInit()       -- called each and every time test mode is entered from anothermode
+ *
+ * Periodic() functions -- each of these functions is called iteratively at the
+ *                         appropriate periodic rate (aka the &quot;slow loop&quot;).  The period of
+ *                         the iterative robot is synced to the driver station control packets,
+ *                         giving a periodic frequency of about 50Hz (50 times per second).
+ *   - disabledPeriodic()
+ *   - autonomousPeriodic()
+ *   - teleopPeriodic()
+ *   - testPeriodoc()
+ *
+ </body>
+              </ownedComment>
+              <generalization xmi:type="uml:Generalization" xmi:id="_hH5mELJCEeWFDNAB7NR6BA" general="_hH4_AbJCEeWFDNAB7NR6BA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hH5mEbJCEeWFDNAB7NR6BA" name="m_disabledInitialized" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hH6NILJCEeWFDNAB7NR6BA" name="m_autonomousInitialized" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hH60MLJCEeWFDNAB7NR6BA" name="m_teleopInitialized" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hH60MbJCEeWFDNAB7NR6BA" name="m_testInitialized" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hH93grJCEeWFDNAB7NR6BA" name="dpFirstRun" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hH-ekrJCEeWFDNAB7NR6BA" name="apFirstRun" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hH_ssLJCEeWFDNAB7NR6BA" name="tpFirstRun" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_hIATwLJCEeWFDNAB7NR6BA" name="tmpFirstRun" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH7bQLJCEeWFDNAB7NR6BA" name="prestart" visibility="protected"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH7bQbJCEeWFDNAB7NR6BA" name="startCompetition" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH8CULJCEeWFDNAB7NR6BA">
+                  <body>
+     * Provide an alternate &quot;main loop&quot; via startCompetition().
+     *
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH8CUbJCEeWFDNAB7NR6BA" name="nextPeriodReady" visibility="private">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH8CUrJCEeWFDNAB7NR6BA">
+                  <body>
+     * Determine if the appropriate next periodic function should be called.
+     * Call the periodic functions whenever a packet is received from the Driver Station, or about every 20ms.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_hH8CU7JCEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH8pYLJCEeWFDNAB7NR6BA" name="robotInit" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH8pYbJCEeWFDNAB7NR6BA">
+                  <body>
+     * Robot-wide initialization code should go here.
+     *
+     * Users should override this method for default Robot-wide initialization which will
+     * be called when the robot is first powered on.  It will be called exactly 1 time.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH8pYrJCEeWFDNAB7NR6BA" name="disabledInit" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH8pY7JCEeWFDNAB7NR6BA">
+                  <body>
+     * Initialization code for disabled mode should go here.
+     *
+     * Users should override this method for initialization code which will be called each time
+     * the robot enters disabled mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH9QcLJCEeWFDNAB7NR6BA" name="autonomousInit" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH9QcbJCEeWFDNAB7NR6BA">
+                  <body>
+     * Initialization code for autonomous mode should go here.
+     *
+     * Users should override this method for initialization code which will be called each time
+     * the robot enters autonomous mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH9QcrJCEeWFDNAB7NR6BA" name="teleopInit" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH9Qc7JCEeWFDNAB7NR6BA">
+                  <body>
+     * Initialization code for teleop mode should go here.
+     *
+     * Users should override this method for initialization code which will be called each time
+     * the robot enters teleop mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH93gLJCEeWFDNAB7NR6BA" name="testInit" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH93gbJCEeWFDNAB7NR6BA">
+                  <body>
+     * Initialization code for test mode should go here.
+     *
+     * Users should override this method for initialization code which will be called each time
+     * the robot enters test mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH-ekLJCEeWFDNAB7NR6BA" name="disabledPeriodic" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH-ekbJCEeWFDNAB7NR6BA">
+                  <body>
+     * Periodic code for disabled mode should go here.
+     *
+     * Users should override this method for code which will be called periodically at a regular
+     * rate while the robot is in disabled mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH_FoLJCEeWFDNAB7NR6BA" name="autonomousPeriodic" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH_FobJCEeWFDNAB7NR6BA">
+                  <body>
+     * Periodic code for autonomous mode should go here.
+     *
+     * Users should override this method for code which will be called periodically at a regular
+     * rate while the robot is in autonomous mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hH_ssbJCEeWFDNAB7NR6BA" name="teleopPeriodic" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hH_ssrJCEeWFDNAB7NR6BA">
+                  <body>
+     * Periodic code for teleop mode should go here.
+     *
+     * Users should override this method for code which will be called periodically at a regular
+     * rate while the robot is in teleop mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_hIATwbJCEeWFDNAB7NR6BA" name="testPeriodic" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_hIATwrJCEeWFDNAB7NR6BA">
+                  <body>
+     * Periodic code for test mode should go here
+     *
+     * Users should override this method for code which will be called periodically at a regular rate
+     * while the robot is in test mode.
+     </body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_hH4_AbJCEeWFDNAB7NR6BA" name="RobotBase"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_H1984rJEEeWFDNAB7NR6BA" name="Sendable"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H1_LALJEEeWFDNAB7NR6BA" name="PIDController"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H2AZIbJEEeWFDNAB7NR6BA" name="PIDSource"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_uS0A0LJFEeWFDNAB7NR6BA" name="DigitalInput" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_uS12ALJFEeWFDNAB7NR6BA">
+                <body>
+ * Class to read a digital input. This class will read digital inputs and return
+ * the current value on the channel. Other devices such as encoders, gear tooth
+ * sensors, etc. that are implemented elsewhere will automatically allocate
+ * digital inputs and outputs as required. This class is only for devices like
+ * switches etc. that aren't implemented anywhere else.
+ </body>
+              </ownedComment>
+              <generalization xmi:type="uml:Generalization" xmi:id="_uS2dELJFEeWFDNAB7NR6BA" general="_uS12AbJFEeWFDNAB7NR6BA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_uS5gYrJFEeWFDNAB7NR6BA" name="m_table" visibility="private" type="_wjjhMKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uS3EIbJFEeWFDNAB7NR6BA" name="DigitalInput implements LiveWindowSendable" client="_uS0A0LJFEeWFDNAB7NR6BA" supplier="_uS3EILJFEeWFDNAB7NR6BA" contract="_uS3EILJFEeWFDNAB7NR6BA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS3EIrJFEeWFDNAB7NR6BA" name="get" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_uS3rMLJFEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the value from a digital input channel. Retrieve the value of a
+	 * single digital input channel from the FPGA.
+	 *
+	 * @return the status of the digital input
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_uS4SQLJFEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS45ULJFEeWFDNAB7NR6BA" name="getChannel" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_uS45UbJFEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the channel of the digital input
+	 *
+	 * @return The GPIO channel number that this object represents.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_uS45UrJFEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS45U7JFEeWFDNAB7NR6BA" name="getAnalogTriggerForRouting" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_uS45VLJFEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS5gYLJFEeWFDNAB7NR6BA" name="getSmartDashboardType" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_uS5gYbJFEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS6HcLJFEeWFDNAB7NR6BA" name="initTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_uS6HcbJFEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_uS6HcrJFEeWFDNAB7NR6BA" name="subtable" type="_wjjhMKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS6ugLJFEeWFDNAB7NR6BA" name="updateTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_uS6ugbJFEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS6ugrJFEeWFDNAB7NR6BA" name="getTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_uS6ug7JFEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_uS7VkLJFEeWFDNAB7NR6BA" type="_wjjhMKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS7VkbJFEeWFDNAB7NR6BA" name="startLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_uS7VkrJFEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_uS7Vk7JFEeWFDNAB7NR6BA" name="stopLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_uS7VlLJFEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_uS12AbJFEeWFDNAB7NR6BA" name="DigitalSource"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_uS2dEbJFEeWFDNAB7NR6BA" name="livewindow">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_uS3EILJFEeWFDNAB7NR6BA" name="LiveWindowSendable"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LVpd4LJGEeWFDNAB7NR6BA" name="Gyro" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_LVqE8LJGEeWFDNAB7NR6BA">
+                <body>
+ * Use a rate gyro to return the robots heading relative to a starting position.
+ * The Gyro class tracks the robots heading based on the starting position. As
+ * the robot rotates the new heading is computed by integrating the rate of
+ * rotation returned by the sensor. When the class is instantiated, it does a
+ * short calibration routine where it samples the gyro while at rest to
+ * determine the default offset. This is subtracted from each sample to
+ * determine the heading.
+ </body>
+              </ownedComment>
+              <generalization xmi:type="uml:Generalization" xmi:id="_LVqsALJGEeWFDNAB7NR6BA" general="_LVqE8bJGEeWFDNAB7NR6BA"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_LVqsAbJGEeWFDNAB7NR6BA" general="_H2AZIbJEEeWFDNAB7NR6BA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVrTELJGEeWFDNAB7NR6BA" name="kOversampleBits" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVr6ILJGEeWFDNAB7NR6BA" name="kAverageBits" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVr6IbJGEeWFDNAB7NR6BA" name="kSamplesPerSecond" isLeaf="true" isStatic="true" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVshMLJGEeWFDNAB7NR6BA" name="kCalibrationSampleTime" isLeaf="true" isStatic="true" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVshMbJGEeWFDNAB7NR6BA" name="kDefaultVoltsPerDegreePerSecond" isLeaf="true" isStatic="true" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVtIQbJGEeWFDNAB7NR6BA" name="m_analog" visibility="protected" type="_LVtIQLJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVtIQrJGEeWFDNAB7NR6BA" name="m_voltsPerDegreePerSecond" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVtvULJGEeWFDNAB7NR6BA" name="m_offset" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVtvUbJGEeWFDNAB7NR6BA" name="m_center" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVuWYLJGEeWFDNAB7NR6BA" name="m_channelAllocated" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVu9cLJGEeWFDNAB7NR6BA" name="result" type="_LVuWYbJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LVvkgLJGEeWFDNAB7NR6BA" name="m_pidSource" visibility="private" type="_LVu9cbJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LV0dALJGEeWFDNAB7NR6BA" name="m_table" visibility="private" type="_wjjhMKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LVqsArJGEeWFDNAB7NR6BA" name="Gyro implements LiveWindowSendable" client="_LVpd4LJGEeWFDNAB7NR6BA" supplier="_uS3EILJFEeWFDNAB7NR6BA" contract="_uS3EILJFEeWFDNAB7NR6BA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVvkgbJGEeWFDNAB7NR6BA" name="initGyro" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVvkgrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Initialize the gyro. Calibrate the gyro by running for a number of
+	 * samples and computing the center value. Then use the center
+	 * value as the Accumulator center value for subsequent measurements. It's
+	 * important to make sure that the robot is not moving while the centering
+	 * calculations are in progress, this is typically done when the robot is
+	 * first turned on while it's sitting at rest before the competition starts.
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVwLkLJGEeWFDNAB7NR6BA" name="reset" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVwLkbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Reset the gyro. Resets the gyro to a heading of zero. This can be used if
+	 * there is significant drift in the gyro and it needs to be recalibrated
+	 * after it has been running.
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVwLkrJGEeWFDNAB7NR6BA" name="free" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVwLk7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * Delete (free) the accumulator and the analog components used for the
+	 * gyro.
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVwLlLJGEeWFDNAB7NR6BA" name="getAngle" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVwyoLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Return the actual angle in degrees that the robot is currently facing.
+	 *
+	 * The angle is based on the current accumulator value corrected by the
+	 * oversampling rate, the gyro type and the A/D calibration values. The
+	 * angle is continuous, that is it will continue from 360 to 361 degrees. This allows
+	 * algorithms that wouldn't want to see a discontinuity in the gyro output
+	 * as it sweeps past from 360 to 0 on the second time around.
+	 *
+	 * @return the current heading of the robot in degrees. This heading is
+	 *         based on integration of the returned rate from the gyro.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVwyobJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVwyorJGEeWFDNAB7NR6BA" name="getRate" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVwyo7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * Return the rate of rotation of the gyro
+	 *
+	 * The rate is based on the most recent reading of the gyro analog value
+	 *
+	 * @return the current rate in degrees per second
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVxZsLJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVxZsbJGEeWFDNAB7NR6BA" name="setSensitivity" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVxZsrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the gyro sensitivity. This takes the number of
+	 * volts/degree/second sensitivity of the gyro and uses it in subsequent
+	 * calculations to allow the code to work with multiple gyros. This value
+	 * is typically found in the gyro datasheet.
+	 *
+	 * @param voltsPerDegreePerSecond
+	 *            The sensitivity in Volts/degree/second.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVyAwLJGEeWFDNAB7NR6BA" name="voltsPerDegreePerSecond" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVyAwbJGEeWFDNAB7NR6BA" name="setDeadband">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVyAwrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the size of the neutral zone.  Any voltage from the gyro less than
+	 * this amount from the center is considered stationary.  Setting a
+	 * deadband will decrease the amount of drift when the gyro isn't rotating,
+	 * but will make it less accurate.
+	 *
+	 * @param volts The size of the deadband in volts
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVyn0LJGEeWFDNAB7NR6BA" name="volts" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVyn0bJGEeWFDNAB7NR6BA" name="setPIDSourceParameter" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVyn0rJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set which parameter of the gyro you are using as a process control
+	 * variable. The Gyro class supports the rate and angle parameters
+	 *
+	 * @param pidSource
+	 *            An enum to select the parameter.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVzO4LJGEeWFDNAB7NR6BA" name="pidSource" type="_LVu9cbJGEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVzO4bJGEeWFDNAB7NR6BA" name="pidGet" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LVzO4rJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the output of the gyro for use with PIDControllers.
+	 * May be the angle or rate depending on the set PIDSourceParameter
+	 *
+	 * @return the output according to the gyro
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVz18LJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LVz18bJGEeWFDNAB7NR6BA" name="getSmartDashboardType" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVz18rJGEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LV0dAbJGEeWFDNAB7NR6BA" name="initTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LV1EELJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LV1EEbJGEeWFDNAB7NR6BA" name="subtable" type="_wjjhMKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LV1rILJGEeWFDNAB7NR6BA" name="getTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LV1rIbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LV1rIrJGEeWFDNAB7NR6BA" type="_wjjhMKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LV1rI7JGEeWFDNAB7NR6BA" name="updateTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LV1rJLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LV2SMLJGEeWFDNAB7NR6BA" name="startLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LV2SMbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LV2SMrJGEeWFDNAB7NR6BA" name="stopLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_LV2SM7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LVqE8bJGEeWFDNAB7NR6BA" name="SensorBase"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LVtIQLJGEeWFDNAB7NR6BA" name="AnalogInput" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_VeNCQLJGEeWFDNAB7NR6BA">
+                <body>
+ * Analog channel class.
+ *
+ * Each analog channel is read from hardware as a 12-bit number representing
+ * 0V to 5V.
+ *
+ * Connected to each analog channel is an averaging and oversampling engine.
+ * This engine accumulates the specified ( by setAverageBits() and
+ * setOversampleBits() ) number of samples before returning a new value. This is
+ * not a sliding window average. The only difference between the oversampled
+ * samples and the averaged samples is that the oversampled samples are simply
+ * accumulated effectively increasing the resolution, while the averaged samples
+ * are divided by the number of samples to retain the resolution, but get more
+ * stable values.
+ </body>
+              </ownedComment>
+              <generalization xmi:type="uml:Generalization" xmi:id="_VeOQYLJGEeWFDNAB7NR6BA" general="_LVqE8bJGEeWFDNAB7NR6BA"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_VeOQYbJGEeWFDNAB7NR6BA" general="_H2AZIbJEEeWFDNAB7NR6BA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeO3cLJGEeWFDNAB7NR6BA" name="kAccumulatorSlot" visibility="private" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VePegbJGEeWFDNAB7NR6BA" name="channels" visibility="private" isStatic="true" type="_VePegLJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeQsoLJGEeWFDNAB7NR6BA" name="m_port" visibility="private" type="_VeQFkbJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeQsobJGEeWFDNAB7NR6BA" name="m_channel" visibility="private" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeRTsLJGEeWFDNAB7NR6BA" name="kAccumulatorChannels" visibility="private" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VeRTsbJGEeWFDNAB7NR6BA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VeRTsrJGEeWFDNAB7NR6BA" value="*"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeR6wbJGEeWFDNAB7NR6BA" name="m_accumulatorOffset" visibility="private" type="_VeR6wLJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeevELJGEeWFDNAB7NR6BA" name="m_table" visibility="private" type="_wjjhMKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_VeOQYrJGEeWFDNAB7NR6BA" name="AnalogInput implements LiveWindowSendable" client="_LVtIQLJGEeWFDNAB7NR6BA" supplier="_uS3EILJFEeWFDNAB7NR6BA" contract="_uS3EILJFEeWFDNAB7NR6BA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeSh0LJGEeWFDNAB7NR6BA" name="free" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeSh0bJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Channel destructor.
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeSh0rJGEeWFDNAB7NR6BA" name="getValue" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeSh07JGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get a sample straight from this channel. The sample is a 12-bit value
+	 * representing the 0V to 5V range of the A/D converter. The units are in
+	 * A/D converter codes. Use GetVoltage() to get the analog value in
+	 * calibrated units.
+	 *
+	 * @return A sample straight from this channel.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeSh1LJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeTI4LJGEeWFDNAB7NR6BA" name="getAverageValue" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeTI4bJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get a sample from the output of the oversample and average engine for
+	 * this channel. The sample is 12-bit + the bits configured in
+	 * SetOversampleBits(). The value configured in setAverageBits() will cause
+	 * this value to be averaged 2^bits number of samples. This is not a
+	 * sliding window. The sample will not change until 2^(OversampleBits +
+	 * AverageBits) samples have been acquired from this channel. Use
+	 * getAverageVoltage() to get the analog value in calibrated units.
+	 *
+	 * @return A sample from the oversample and average engine for this channel.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeTI4rJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeTv8LJGEeWFDNAB7NR6BA" name="getVoltage" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeTv8bJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get a scaled sample straight from this channel. The value is scaled to
+	 * units of Volts using the calibrated scaling data from getLSBWeight() and
+	 * getOffset().
+	 *
+	 * @return A scaled sample straight from this channel.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeTv8rJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeTv87JGEeWFDNAB7NR6BA" name="getAverageVoltage" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeUXALJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get a scaled sample from the output of the oversample and average engine
+	 * for this channel. The value is scaled to units of Volts using the
+	 * calibrated scaling data from getLSBWeight() and getOffset(). Using
+	 * oversampling will cause this value to be higher resolution, but it will
+	 * update more slowly. Using averaging will cause this value to be more
+	 * stable, but it will update more slowly.
+	 *
+	 * @return A scaled sample from the output of the oversample and average
+	 *		 engine for this channel.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeUXAbJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeUXArJGEeWFDNAB7NR6BA" name="getLSBWeight" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeUXA7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the factory scaling least significant bit weight constant. The least
+	 * significant bit weight constant for the channel that was calibrated in
+	 * manufacturing and stored in an eeprom.
+	 *
+	 * Volts = ((LSB_Weight * 1e-9) * raw) - (Offset * 1e-9)
+	 *
+	 * @return Least significant bit weight.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeUXBLJGEeWFDNAB7NR6BA" type="_VeR6wLJGEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeU-ELJGEeWFDNAB7NR6BA" name="getOffset" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeU-EbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the factory scaling offset constant. The offset constant for the
+	 * channel that was calibrated in manufacturing and stored in an eeprom.
+	 *
+	 * Volts = ((LSB_Weight * 1e-9) * raw) - (Offset * 1e-9)
+	 *
+	 * @return Offset constant.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeU-ErJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeU-E7JGEeWFDNAB7NR6BA" name="getChannel" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeVlILJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the channel number.
+	 *
+	 * @return The channel number.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeVlIbJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeVlIrJGEeWFDNAB7NR6BA" name="setAverageBits" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeVlI7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the number of averaging bits. This sets the number of averaging bits.
+	 * The actual number of averaged samples is 2^bits. The averaging is done
+	 * automatically in the FPGA.
+	 *
+	 * @param bits
+	 *			The number of averaging bits.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeWMMLJGEeWFDNAB7NR6BA" name="bits" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeWMMbJGEeWFDNAB7NR6BA" name="getAverageBits" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeWMMrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the number of averaging bits. This gets the number of averaging bits
+	 * from the FPGA. The actual number of averaged samples is 2^bits. The
+	 * averaging is done automatically in the FPGA.
+	 *
+	 * @return The number of averaging bits.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeWzQLJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeWzQbJGEeWFDNAB7NR6BA" name="setOversampleBits" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeWzQrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the number of oversample bits. This sets the number of oversample
+	 * bits. The actual number of oversampled values is 2^bits. The
+	 * oversampling is done automatically in the FPGA.
+	 *
+	 * @param bits
+	 *			The number of oversample bits.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeXaULJGEeWFDNAB7NR6BA" name="bits" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeXaUbJGEeWFDNAB7NR6BA" name="getOversampleBits" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeXaUrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the number of oversample bits. This gets the number of oversample
+	 * bits from the FPGA. The actual number of oversampled values is 2^bits.
+	 * The oversampling is done automatically in the FPGA.
+	 *
+	 * @return The number of oversample bits.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeYBYLJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeYBYbJGEeWFDNAB7NR6BA" name="initAccumulator" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeYBYrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Initialize the accumulator.
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeYBY7JGEeWFDNAB7NR6BA" name="setAccumulatorInitialValue" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeYBZLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set an initial value for the accumulator.
+	 *
+	 * This will be added to all values returned to the user.
+	 *
+	 * @param initialValue
+	 *			The value that the accumulator should start from when reset.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeYocLJGEeWFDNAB7NR6BA" name="initialValue" type="_VeR6wLJGEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeYocbJGEeWFDNAB7NR6BA" name="resetAccumulator" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeYocrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Resets the accumulator to the initial value.
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeZPgLJGEeWFDNAB7NR6BA" name="setAccumulatorCenter" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeZPgbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the center value of the accumulator.
+	 *
+	 * The center value is subtracted from each A/D value before it is added to
+	 * the accumulator. This is used for the center value of devices like gyros
+	 * and accelerometers to take the device offset
+	 * into account when integrating.
+	 *
+	 * This center value is based on the output of the oversampled and averaged
+	 * source the accumulator channel. Because of this, any non-zero oversample bits will
+	 * affect the size of the value for this field.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeZPgrJGEeWFDNAB7NR6BA" name="center" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeZ2kLJGEeWFDNAB7NR6BA" name="setAccumulatorDeadband" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeZ2kbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the accumulator's deadband.
+	 * @param deadband The deadband size in ADC codes (12-bit value)
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeZ2krJGEeWFDNAB7NR6BA" name="deadband" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeadoLJGEeWFDNAB7NR6BA" name="getAccumulatorValue" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeadobJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Read the accumulated value.
+	 *
+	 * Read the value that has been accumulating. The accumulator
+	 * is attached after the oversample and average engine.
+	 *
+	 * @return The 64-bit value accumulated since the last Reset().
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeadorJGEeWFDNAB7NR6BA" type="_VeR6wLJGEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Veado7JGEeWFDNAB7NR6BA" name="getAccumulatorCount" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeadpLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Read the number of accumulated values.
+	 *
+	 * Read the count of the accumulated values since the accumulator was last
+	 * Reset().
+	 *
+	 * @return The number of times samples from the channel were accumulated.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VebEsLJGEeWFDNAB7NR6BA" type="_VeR6wLJGEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VebEsbJGEeWFDNAB7NR6BA" name="getAccumulatorOutput" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VebEsrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Read the accumulated value and the number of accumulated values
+	 * atomically.
+	 *
+	 * This function reads the value and count from the FPGA atomically. This
+	 * can be used for averaging.
+	 *
+	 * @param result
+	 *			AccumulatorResult object to store the results in.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VebrwLJGEeWFDNAB7NR6BA" name="result" type="_LVuWYbJGEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VebrwbJGEeWFDNAB7NR6BA" name="isAccumulatorChannel" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VebrwrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Is the channel attached to an accumulator.
+	 *
+	 * @return The analog channel is attached to an accumulator.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VecS0LJGEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VecS0bJGEeWFDNAB7NR6BA" name="setGlobalSampleRate" visibility="public" isStatic="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VecS0rJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the sample rate per channel.
+	 *
+	 * This is a global setting for all channels.
+	 * The maximum rate is 500kS/s divided by the number of channels in use.
+	 * This is 62500 samples/s per channel if all 8 channels are used.
+	 * @param samplesPerSecond The number of samples per second.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vec54LJGEeWFDNAB7NR6BA" name="samplesPerSecond" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vec54bJGEeWFDNAB7NR6BA" name="getGlobalSampleRate" visibility="public" isStatic="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vec54rJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the current sample rate.
+	 *
+	 * This assumes one entry in the scan list. This is a global setting for
+	 * all channels.
+	 *
+	 * @return Sample rate.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vedg8LJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vedg8bJGEeWFDNAB7NR6BA" name="pidGet" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vedg8rJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the average voltage for use with PIDController
+	 *
+	 * @return the average voltage
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeeIALJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeeIAbJGEeWFDNAB7NR6BA" name="getSmartDashboardType" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeeIArJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Live Window code, only does anything if live window is activated.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeeIA7JGEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeevEbJGEeWFDNAB7NR6BA" name="initTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VefWILJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VefWIbJGEeWFDNAB7NR6BA" name="subtable" type="_wjjhMKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VefWIrJGEeWFDNAB7NR6BA" name="updateTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vef9MLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vef9MbJGEeWFDNAB7NR6BA" name="getTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vef9MrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vef9M7JGEeWFDNAB7NR6BA" type="_wjjhMKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VegkQLJGEeWFDNAB7NR6BA" name="startLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VegkQbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Analog Channels don't have to do anything special when entering the
+	 * LiveWindow. {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VegkQrJGEeWFDNAB7NR6BA" name="stopLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VegkQ7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * Analog Channels don't have to do anything special when exiting the
+	 * LiveWindow. {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LVuWYbJGEeWFDNAB7NR6BA" name="AccumulatorResult"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LVu9cbJGEeWFDNAB7NR6BA" name="PIDSourceParameter"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_VePegLJGEeWFDNAB7NR6BA" name="Resource"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_VeqVQLJGEeWFDNAB7NR6BA" name="Encoder" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_VeqVQbJGEeWFDNAB7NR6BA">
+                <body>
+ * Class to read quad encoders. Quadrature encoders are devices that count shaft
+ * rotation and can sense direction. The output of the QuadEncoder class is an
+ * integer that can count either up or down, and can go negative for reverse
+ * direction counting. When creating QuadEncoders, a direction is supplied that
+ * changes the sense of the output to make code more readable if the encoder is
+ * mounted such that forward movement generates negative values. Quadrature
+ * encoders have two digital outputs, an A Channel and a B Channel that are out
+ * of phase with each other to allow the FPGA to do direction sensing.
+ *
+ * All encoders will immediately start counting - reset() them if you need them
+ * to be zeroed before use.
+ </body>
+              </ownedComment>
+              <generalization xmi:type="uml:Generalization" xmi:id="_Veq8ULJGEeWFDNAB7NR6BA" general="_LVqE8bJGEeWFDNAB7NR6BA"/>
+              <generalization xmi:type="uml:Generalization" xmi:id="_VerjYLJGEeWFDNAB7NR6BA" general="_H2AZIbJEEeWFDNAB7NR6BA"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VesKcLJGEeWFDNAB7NR6BA" name="m_aSource" visibility="protected" type="_uS12AbJFEeWFDNAB7NR6BA" isUnique="false">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VesKcbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * The a source
+	 </body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VesKcrJGEeWFDNAB7NR6BA" name="m_bSource" visibility="protected" type="_uS12AbJFEeWFDNAB7NR6BA" isUnique="false">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VesxgLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * The b source
+	 </body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VesxgbJGEeWFDNAB7NR6BA" name="m_indexSource" visibility="protected" type="_uS12AbJFEeWFDNAB7NR6BA" isUnique="false">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VesxgrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * The index source
+	 </body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VetYkLJGEeWFDNAB7NR6BA" name="m_encoder" visibility="private" type="_VeQFkbJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VetYkbJGEeWFDNAB7NR6BA" name="m_index" visibility="private" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VetYkrJGEeWFDNAB7NR6BA" name="m_distancePerPulse" visibility="private" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_Vet_obJGEeWFDNAB7NR6BA" name="m_counter" visibility="private" type="_Vet_oLJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeumsbJGEeWFDNAB7NR6BA" name="m_encodingType" visibility="private" type="_VeumsLJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VeumsrJGEeWFDNAB7NR6BA" name="m_encodingScale" visibility="private" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VevNwLJGEeWFDNAB7NR6BA" name="m_allocatedA" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VevNwbJGEeWFDNAB7NR6BA" name="m_allocatedB" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_Vev00LJGEeWFDNAB7NR6BA" name="m_allocatedI" visibility="private" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_Vev00bJGEeWFDNAB7NR6BA" name="m_pidSource" visibility="private" type="_LVu9cbJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_Ve-eULJGEeWFDNAB7NR6BA" name="m_table" visibility="private" type="_wjjhMKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Veq8UrJGEeWFDNAB7NR6BA" name="Encoder implements CounterBase" client="_VeqVQLJGEeWFDNAB7NR6BA" supplier="_Veq8UbJGEeWFDNAB7NR6BA" contract="_Veq8UbJGEeWFDNAB7NR6BA"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_VerjYbJGEeWFDNAB7NR6BA" name="Encoder implements LiveWindowSendable" client="_VeqVQLJGEeWFDNAB7NR6BA" supplier="_uS3EILJFEeWFDNAB7NR6BA" contract="_uS3EILJFEeWFDNAB7NR6BA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vev00rJGEeWFDNAB7NR6BA" name="initEncoder" visibility="private">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vewb4LJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Common initialization code for Encoders. This code allocates resources
+	 * for Encoders and is common to all constructors.
+	 *
+	 * The encoder will start counting immediately.
+	 *
+	 * @param reverseDirection
+	 *            If true, counts down instead of up (this is all relative)
+	 * @param encodingType
+	 *            either k1X, k2X, or k4X to indicate 1X, 2X or 4X decoding. If
+	 *            4X is selected, then an encoder FPGA object is used and the
+	 *            returned counts will be 4x the encoder spec'd value since all
+	 *            rising and falling edges are counted. If 1X or 2X are selected
+	 *            then a counter object will be used and the returned value will
+	 *            either exactly match the spec'd count or be double (2x) the
+	 *            spec'd count.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vewb4bJGEeWFDNAB7NR6BA" name="reverseDirection" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vewb4rJGEeWFDNAB7NR6BA" name="getFPGAIndex" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vewb47JGEeWFDNAB7NR6BA">
+                  <body>
+	 * @return the Encoder's FPGA index
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VexC8LJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VexC8bJGEeWFDNAB7NR6BA" name="getEncodingScale" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VexC8rJGEeWFDNAB7NR6BA">
+                  <body>
+	 * @return the encoding scale factor 1x, 2x, or 4x, per the requested
+	 *   encodingType. Used to divide raw edge counts down to spec'd counts.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VexC87JGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VexC9LJGEeWFDNAB7NR6BA" name="free" visibility="public"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VexqALJGEeWFDNAB7NR6BA" name="getRaw" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VexqAbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Gets the raw value from the encoder. The raw value is the actual count
+	 * unscaled by the 1x, 2x, or 4x scale factor.
+	 *
+	 * @return Current raw count from the encoder
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VexqArJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VexqA7JGEeWFDNAB7NR6BA" name="get" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeyRELJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Gets the current count. Returns the current count on the Encoder. This
+	 * method compensates for the decoding type.
+	 *
+	 * @return Current count from the Encoder adjusted for the 1x, 2x, or 4x
+	 *         scale factor.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VeyREbJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VeyRErJGEeWFDNAB7NR6BA" name="reset" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VeyRE7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * Reset the Encoder distance to zero. Resets the current count to zero on
+	 * the encoder.
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vey4ILJGEeWFDNAB7NR6BA" name="getPeriod" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vey4IbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Returns the period of the most recent pulse. Returns the period of the
+	 * most recent Encoder pulse in seconds. This method compensates for the
+	 * decoding type.
+	 *
+	 * @deprecated Use getRate() in favor of this method. This returns unscaled
+	 *             periods and getRate() scales using value from
+	 *             setDistancePerPulse().
+	 *
+	 * @return Period in seconds of the most recent pulse.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vey4IrJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vey4I7JGEeWFDNAB7NR6BA" name="setMaxPeriod" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vey4JLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Sets the maximum period for stopped detection. Sets the value that
+	 * represents the maximum period of the Encoder before it will assume that
+	 * the attached device is stopped. This timeout allows users to determine if
+	 * the wheels or other shaft has stopped rotating. This method compensates
+	 * for the decoding type.
+	 *
+	 *
+	 * @param maxPeriod
+	 *            The maximum time between rising and falling edges before the
+	 *            FPGA will report the device stopped. This is expressed in
+	 *            seconds.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VezfMLJGEeWFDNAB7NR6BA" name="maxPeriod" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VezfMbJGEeWFDNAB7NR6BA" name="getStopped" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve0GQLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Determine if the encoder is stopped. Using the MaxPeriod value, a boolean
+	 * is returned that is true if the encoder is considered stopped and false
+	 * if it is still moving. A stopped encoder is one where the most recent
+	 * pulse width exceeds the MaxPeriod.
+	 *
+	 * @return True if the encoder is considered stopped.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve0GQbJGEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve0GQrJGEeWFDNAB7NR6BA" name="getDirection" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve0GQ7JGEeWFDNAB7NR6BA">
+                  <body>
+	 * The last direction the encoder value changed.
+	 *
+	 * @return The last direction the encoder value changed.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve0tULJGEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve0tUbJGEeWFDNAB7NR6BA" name="decodingScaleFactor" visibility="private">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve0tUrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * The scale needed to convert a raw counter value into a number of encoder
+	 * pulses.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve0tU7JGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve1UYLJGEeWFDNAB7NR6BA" name="getDistance" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve1UYbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the distance the robot has driven since the last reset.
+	 *
+	 * @return The distance driven since the last reset as scaled by the value
+	 *         from setDistancePerPulse().
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve1UYrJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve1UY7JGEeWFDNAB7NR6BA" name="getRate" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve1UZLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the current rate of the encoder. Units are distance per second as
+	 * scaled by the value from setDistancePerPulse().
+	 *
+	 * @return The current rate of the encoder.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve17cLJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve17cbJGEeWFDNAB7NR6BA" name="setMinRate" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve17crJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the minimum rate of the device before the hardware reports it
+	 * stopped.
+	 *
+	 * @param minRate
+	 *            The minimum rate. The units are in distance per second as
+	 *            scaled by the value from setDistancePerPulse().
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve2igLJGEeWFDNAB7NR6BA" name="minRate" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve2igbJGEeWFDNAB7NR6BA" name="setDistancePerPulse" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve2igrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the distance per pulse for this encoder. This sets the multiplier
+	 * used to determine the distance driven based on the count value from the
+	 * encoder. Do not include the decoding type in this scale. The library
+	 * already compensates for the decoding type. Set this value based on the
+	 * encoder's rated Pulses per Revolution and factor in gearing reductions
+	 * following the encoder shaft. This distance can be in any units you like,
+	 * linear or angular.
+	 *
+	 * @param distancePerPulse
+	 *            The scale factor that will be used to convert pulses to useful
+	 *            units.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve3JkLJGEeWFDNAB7NR6BA" name="distancePerPulse" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve3JkbJGEeWFDNAB7NR6BA" name="setReverseDirection" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve3JkrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the direction sensing for this encoder. This sets the direction
+	 * sensing on the encoder so that it could count in the correct software
+	 * direction regardless of the mounting.
+	 *
+	 * @param reverseDirection
+	 *            true if the encoder direction should be reversed
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve3woLJGEeWFDNAB7NR6BA" name="reverseDirection" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve3wobJGEeWFDNAB7NR6BA" name="setSamplesToAverage" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve3worJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the Samples to Average which specifies the number of samples of the
+	 * timer to average when calculating the period. Perform averaging to
+	 * account for mechanical imperfections or as oversampling to increase
+	 * resolution.
+	 *
+	 * TODO: Should this throw a checked exception, so that the user has to deal
+	 * with giving an incorrect value?
+	 *
+	 * @param samplesToAverage
+	 *            The number of samples to average from 1 to 127.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve4XsLJGEeWFDNAB7NR6BA" name="samplesToAverage" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve4XsbJGEeWFDNAB7NR6BA" name="getSamplesToAverage" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve4XsrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Get the Samples to Average which specifies the number of samples of the
+	 * timer to average when calculating the period. Perform averaging to
+	 * account for mechanical imperfections or as oversampling to increase
+	 * resolution.
+	 *
+	 * @return SamplesToAverage The number of samples being averaged (from 1 to
+	 *         127)
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve4-wLJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve4-wbJGEeWFDNAB7NR6BA" name="setPIDSourceParameter" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve4-wrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set which parameter of the encoder you are using as a process control
+	 * variable. The encoder class supports the rate and distance parameters.
+	 *
+	 * @param pidSource
+	 *            An enum to select the parameter.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve5l0LJGEeWFDNAB7NR6BA" name="pidSource" type="_LVu9cbJGEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve5l0bJGEeWFDNAB7NR6BA" name="pidGet" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve5l0rJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Implement the PIDSource interface.
+	 *
+	 * @return The current value of the selected source parameter.
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve6M4LJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve6z8LJGEeWFDNAB7NR6BA" name="setIndexSource" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve6z8bJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the index source for the encoder.  When this source rises, the encoder count automatically resets.
+	 *
+	 * @param channel A DIO channel to set as the encoder index
+	 * @param type The state that will cause the encoder to reset
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve6z8rJGEeWFDNAB7NR6BA" name="channel" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve7bALJGEeWFDNAB7NR6BA" name="type" type="_Ve6M4bJGEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve7bAbJGEeWFDNAB7NR6BA" name="setIndexSource" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve8CELJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the index source for the encoder.  When this source is activated, the encoder count automatically resets.
+	 *
+	 * @param channel A DIO channel to set as the encoder index
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve8CEbJGEeWFDNAB7NR6BA" name="channel" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve8CErJGEeWFDNAB7NR6BA" name="setIndexSource" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve8pILJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the index source for the encoder.  When this source rises, the encoder count automatically resets.
+	 *
+	 * @param source A digital source to set as the encoder index
+	 * @param type The state that will cause the encoder to reset
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve8pIbJGEeWFDNAB7NR6BA" name="source" type="_uS12AbJFEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve9QMLJGEeWFDNAB7NR6BA" name="type" type="_Ve6M4bJGEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve9QMbJGEeWFDNAB7NR6BA" name="setIndexSource" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve9QMrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * Set the index source for the encoder.  When this source is activated, the encoder count automatically resets.
+	 *
+	 * @param source A digital source to set as the encoder index
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve93QLJGEeWFDNAB7NR6BA" name="source" type="_uS12AbJFEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve93QbJGEeWFDNAB7NR6BA" name="getSmartDashboardType" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve93QrJGEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve-eUbJGEeWFDNAB7NR6BA" name="initTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve-eUrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve_FYLJGEeWFDNAB7NR6BA" name="subtable" type="_wjjhMKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve_FYbJGEeWFDNAB7NR6BA" name="getTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve_FYrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ve_scLJGEeWFDNAB7NR6BA" type="_wjjhMKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve_scbJGEeWFDNAB7NR6BA" name="updateTable" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Ve_scrJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Ve_sc7JGEeWFDNAB7NR6BA" name="startLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfATgLJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfA6kLJGEeWFDNAB7NR6BA" name="stopLiveWindowMode" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfA6kbJGEeWFDNAB7NR6BA">
+                  <body>
+	 * {@inheritDoc}
+	 </body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_Veq8UbJGEeWFDNAB7NR6BA" name="CounterBase"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Vet_oLJGEeWFDNAB7NR6BA" name="Counter"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_VeumsLJGEeWFDNAB7NR6BA" name="EncodingType"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Ve6M4bJGEeWFDNAB7NR6BA" name="IndexingType"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_VfMgwLJGEeWFDNAB7NR6BA" name="RobotDrive" visibility="public">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_VfNH0LJGEeWFDNAB7NR6BA">
+                <body>
+ * Utility class for handling Robot drive based on a definition of the motor configuration.
+ * The robot drive class handles basic driving for a robot. Currently, 2 and 4 motor tank and
+ * mecanum drive trains are supported. In the future other drive types like swerve might
+ * be implemented. Motor channel numbers are supplied on creation of the class. Those are
+ * used for either the drive function (intended for hand created drive code, such as autonomous)
+ * or with the Tank/Arcade functions intended to be used for Operator Control driving.
+ </body>
+              </ownedComment>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfOV8LJGEeWFDNAB7NR6BA" name="m_safetyHelper" visibility="protected" type="_VfNu4LJGEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfTOcLJGEeWFDNAB7NR6BA" name="kDefaultExpirationTime" visibility="public" isLeaf="true" isStatic="true" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfT1gLJGEeWFDNAB7NR6BA" name="kDefaultSensitivity" visibility="public" isLeaf="true" isStatic="true" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfT1gbJGEeWFDNAB7NR6BA" name="kDefaultMaxOutput" visibility="public" isLeaf="true" isStatic="true" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfUckLJGEeWFDNAB7NR6BA" name="kMaxNumberOfMotors" visibility="protected" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfUckbJGEeWFDNAB7NR6BA" name="m_invertedMotors" visibility="protected" isLeaf="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfVDoLJGEeWFDNAB7NR6BA" name="m_sensitivity" visibility="protected" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfVDobJGEeWFDNAB7NR6BA" name="m_maxOutput" visibility="protected" type="_wiw3AKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfVqsLJGEeWFDNAB7NR6BA" name="m_frontLeftMotor" visibility="protected" type="__INdcKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfVqsbJGEeWFDNAB7NR6BA" name="m_frontRightMotor" visibility="protected" type="__INdcKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfWRwLJGEeWFDNAB7NR6BA" name="m_rearLeftMotor" visibility="protected" type="__INdcKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfWRwbJGEeWFDNAB7NR6BA" name="m_rearRightMotor" visibility="protected" type="__INdcKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfW40LJGEeWFDNAB7NR6BA" name="m_allocatedSpeedControllers" visibility="protected" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfW40bJGEeWFDNAB7NR6BA" name="m_syncGroup" visibility="protected" type="__ITkEKyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfXf4LJGEeWFDNAB7NR6BA" name="kArcadeRatioCurve_Reported" visibility="protected" isStatic="true" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfXf4bJGEeWFDNAB7NR6BA" name="kTank_Reported" visibility="protected" isStatic="true" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfYG8LJGEeWFDNAB7NR6BA" name="kArcadeStandard_Reported" visibility="protected" isStatic="true" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfYuALJGEeWFDNAB7NR6BA" name="kMecanumCartesian_Reported" visibility="protected" isStatic="true" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VfYuAbJGEeWFDNAB7NR6BA" name="kMecanumPolar_Reported" visibility="protected" isStatic="true" type="_wiz6UqyvEeWRLuq1zmV17g" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_VfNH0rJGEeWFDNAB7NR6BA" name="RobotDrive implements MotorSafety" client="_VfMgwLJGEeWFDNAB7NR6BA" supplier="_VfNH0bJGEeWFDNAB7NR6BA" contract="_VfNH0bJGEeWFDNAB7NR6BA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfZVELJGEeWFDNAB7NR6BA" name="drive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfZVEbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Drive the motors at &quot;speed&quot; and &quot;curve&quot;.
+     *
+     * The speed and curve are -1.0 to +1.0 values where 0.0 represents stopped and
+     * not turning. The algorithm for adding in the direction attempts to provide a constant
+     * turn radius for differing speeds.
+     *
+     * This function will most likely be used in an autonomous routine.
+     *
+     * @param outputMagnitude The forward component of the output magnitude to send to the motors.
+     * @param curve The rate of turn, constant for different forward speeds.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfZVErJGEeWFDNAB7NR6BA" name="outputMagnitude" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfZ8ILJGEeWFDNAB7NR6BA" name="curve" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfZ8IbJGEeWFDNAB7NR6BA" name="tankDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfajMLJGEeWFDNAB7NR6BA">
+                  <body>
+     * Provide tank steering using the stored robot configuration.
+     * drive the robot using two joystick inputs. The Y-axis will be selected from
+     * each Joystick object.
+     * @param leftStick The joystick to control the left side of the robot.
+     * @param rightStick The joystick to control the right side of the robot.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfajMbJGEeWFDNAB7NR6BA" name="leftStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfajMrJGEeWFDNAB7NR6BA" name="rightStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfbKQLJGEeWFDNAB7NR6BA" name="tankDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfbxULJGEeWFDNAB7NR6BA">
+                  <body>
+     * Provide tank steering using the stored robot configuration.
+     * drive the robot using two joystick inputs. The Y-axis will be selected from
+     * each Joystick object.
+     * @param leftStick The joystick to control the left side of the robot.
+     * @param rightStick The joystick to control the right side of the robot.
+     * @param squaredInputs Setting this parameter to true decreases the sensitivity at lower speeds
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfbxUbJGEeWFDNAB7NR6BA" name="leftStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfcYYLJGEeWFDNAB7NR6BA" name="rightStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfcYYbJGEeWFDNAB7NR6BA" name="squaredInputs" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfc_cLJGEeWFDNAB7NR6BA" name="tankDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vfc_cbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Provide tank steering using the stored robot configuration.
+     * This function lets you pick the axis to be used on each Joystick object for the left
+     * and right sides of the robot.
+     * @param leftStick The Joystick object to use for the left side of the robot.
+     * @param leftAxis The axis to select on the left side Joystick object.
+     * @param rightStick The Joystick object to use for the right side of the robot.
+     * @param rightAxis The axis to select on the right side Joystick object.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfdmgLJGEeWFDNAB7NR6BA" name="leftStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfdmgbJGEeWFDNAB7NR6BA" name="leftAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfeNkLJGEeWFDNAB7NR6BA" name="rightStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfeNkbJGEeWFDNAB7NR6BA" name="rightAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfe0oLJGEeWFDNAB7NR6BA" name="tankDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vfe0obJGEeWFDNAB7NR6BA">
+                  <body>
+     * Provide tank steering using the stored robot configuration.
+     * This function lets you pick the axis to be used on each Joystick object for the left
+     * and right sides of the robot.
+     * @param leftStick The Joystick object to use for the left side of the robot.
+     * @param leftAxis The axis to select on the left side Joystick object.
+     * @param rightStick The Joystick object to use for the right side of the robot.
+     * @param rightAxis The axis to select on the right side Joystick object.
+     * @param squaredInputs Setting this parameter to true decreases the sensitivity at lower speeds
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfe0orJGEeWFDNAB7NR6BA" name="leftStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VffbsLJGEeWFDNAB7NR6BA" name="leftAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VffbsbJGEeWFDNAB7NR6BA" name="rightStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfgCwLJGEeWFDNAB7NR6BA" name="rightAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfgCwbJGEeWFDNAB7NR6BA" name="squaredInputs" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfgp0LJGEeWFDNAB7NR6BA" name="tankDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vfgp0bJGEeWFDNAB7NR6BA">
+                  <body>
+     * Provide tank steering using the stored robot configuration.
+     * This function lets you directly provide joystick values from any source.
+     * @param leftValue The value of the left stick.
+     * @param rightValue The value of the right stick.
+     * @param squaredInputs Setting this parameter to true decreases the sensitivity at lower speeds
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfgp0rJGEeWFDNAB7NR6BA" name="leftValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfhQ4LJGEeWFDNAB7NR6BA" name="rightValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfhQ4bJGEeWFDNAB7NR6BA" name="squaredInputs" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfh38LJGEeWFDNAB7NR6BA" name="tankDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vfh38bJGEeWFDNAB7NR6BA">
+                  <body>
+     * Provide tank steering using the stored robot configuration.
+     * This function lets you directly provide joystick values from any source.
+     * @param leftValue The value of the left stick.
+     * @param rightValue The value of the right stick.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfh38rJGEeWFDNAB7NR6BA" name="leftValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfifALJGEeWFDNAB7NR6BA" name="rightValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfifAbJGEeWFDNAB7NR6BA" name="arcadeDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfifArJGEeWFDNAB7NR6BA">
+                  <body>
+     * Arcade drive implements single stick driving.
+     * Given a single Joystick, the class assumes the Y axis for the move value and the X axis
+     * for the rotate value.
+     * (Should add more information here regarding the way that arcade drive works.)
+     * @param stick The joystick to use for Arcade single-stick driving. The Y-axis will be selected
+     * for forwards/backwards and the X-axis will be selected for rotation rate.
+     * @param squaredInputs If true, the sensitivity will be decreased for small values
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfjGELJGEeWFDNAB7NR6BA" name="stick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfjGEbJGEeWFDNAB7NR6BA" name="squaredInputs" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfjGErJGEeWFDNAB7NR6BA" name="arcadeDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfjtILJGEeWFDNAB7NR6BA">
+                  <body>
+     * Arcade drive implements single stick driving.
+     * Given a single Joystick, the class assumes the Y axis for the move value and the X axis
+     * for the rotate value.
+     * (Should add more information here regarding the way that arcade drive works.)
+     * @param stick The joystick to use for Arcade single-stick driving. The Y-axis will be selected
+     * for forwards/backwards and the X-axis will be selected for rotation rate.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfjtIbJGEeWFDNAB7NR6BA" name="stick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfkUMLJGEeWFDNAB7NR6BA" name="arcadeDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfkUMbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Arcade drive implements single stick driving.
+     * Given two joystick instances and two axis, compute the values to send to either two
+     * or four motors.
+     * @param moveStick The Joystick object that represents the forward/backward direction
+     * @param moveAxis The axis on the moveStick object to use for forwards/backwards (typically Y_AXIS)
+     * @param rotateStick The Joystick object that represents the rotation value
+     * @param rotateAxis The axis on the rotation object to use for the rotate right/left (typically X_AXIS)
+     * @param squaredInputs Setting this parameter to true decreases the sensitivity at lower speeds
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfkUMrJGEeWFDNAB7NR6BA" name="moveStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfk7QLJGEeWFDNAB7NR6BA" name="moveAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfk7QbJGEeWFDNAB7NR6BA" name="rotateStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfliULJGEeWFDNAB7NR6BA" name="rotateAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfliUbJGEeWFDNAB7NR6BA" name="squaredInputs" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfmJYLJGEeWFDNAB7NR6BA" name="arcadeDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfmJYbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Arcade drive implements single stick driving.
+     * Given two joystick instances and two axis, compute the values to send to either two
+     * or four motors.
+     * @param moveStick The Joystick object that represents the forward/backward direction
+     * @param moveAxis The axis on the moveStick object to use for forwards/backwards (typically Y_AXIS)
+     * @param rotateStick The Joystick object that represents the rotation value
+     * @param rotateAxis The axis on the rotation object to use for the rotate right/left (typically X_AXIS)
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfmwcLJGEeWFDNAB7NR6BA" name="moveStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfmwcbJGEeWFDNAB7NR6BA" name="moveAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfnXgLJGEeWFDNAB7NR6BA" name="rotateStick" type="_-ec7QLJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfnXgbJGEeWFDNAB7NR6BA" name="rotateAxis" type="_-ef-kbJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfn-kLJGEeWFDNAB7NR6BA" name="arcadeDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfpMsLJGEeWFDNAB7NR6BA">
+                  <body>
+     * Arcade drive implements single stick driving.
+     * This function lets you directly provide joystick values from any source.
+     * @param moveValue The value to use for forwards/backwards
+     * @param rotateValue The value to use for the rotate right/left
+     * @param squaredInputs If set, decreases the sensitivity at low speeds
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfpMsbJGEeWFDNAB7NR6BA" name="moveValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfpzwLJGEeWFDNAB7NR6BA" name="rotateValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfqa0LJGEeWFDNAB7NR6BA" name="squaredInputs" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfqa0bJGEeWFDNAB7NR6BA" name="arcadeDrive" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vfqa0rJGEeWFDNAB7NR6BA">
+                  <body>
+     * Arcade drive implements single stick driving.
+     * This function lets you directly provide joystick values from any source.
+     * @param moveValue The value to use for fowards/backwards
+     * @param rotateValue The value to use for the rotate right/left
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfrB4LJGEeWFDNAB7NR6BA" name="moveValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfro8LJGEeWFDNAB7NR6BA" name="rotateValue" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfro8bJGEeWFDNAB7NR6BA" name="mecanumDrive_Cartesian" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vfro8rJGEeWFDNAB7NR6BA">
+                  <body>
+     * Drive method for Mecanum wheeled robots.
+     *
+     * A method for driving with Mecanum wheeled robots. There are 4 wheels
+     * on the robot, arranged so that the front and back wheels are toed in 45 degrees.
+     * When looking at the wheels from the top, the roller axles should form an X across the robot.
+     *
+     * This is designed to be directly driven by joystick axes.
+     *
+     * @param x The speed that the robot should drive in the X direction. [-1.0..1.0]
+     * @param y The speed that the robot should drive in the Y direction.
+     * This input is inverted to match the forward == -1.0 that joysticks produce. [-1.0..1.0]
+     * @param rotation The rate of rotation for the robot that is completely independent of
+     * the translation. [-1.0..1.0]
+     * @param gyroAngle The current angle reading from the gyro.  Use this to implement field-oriented controls.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfsQALJGEeWFDNAB7NR6BA" name="x" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfsQAbJGEeWFDNAB7NR6BA" name="y" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfs3ELJGEeWFDNAB7NR6BA" name="rotation" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfs3EbJGEeWFDNAB7NR6BA" name="gyroAngle" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfteILJGEeWFDNAB7NR6BA" name="mecanumDrive_Polar" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfteIbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Drive method for Mecanum wheeled robots.
+     *
+     * A method for driving with Mecanum wheeled robots. There are 4 wheels
+     * on the robot, arranged so that the front and back wheels are toed in 45 degrees.
+     * When looking at the wheels from the top, the roller axles should form an X across the robot.
+     *
+     * @param magnitude The speed that the robot should drive in a given direction.
+     * @param direction The direction the robot should drive in degrees. The direction and maginitute are
+     * independent of the rotation rate.
+     * @param rotation The rate of rotation for the robot that is completely independent of
+     * the magnitute or direction. [-1.0..1.0]
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfuFMLJGEeWFDNAB7NR6BA" name="magnitude" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfuFMbJGEeWFDNAB7NR6BA" name="direction" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfusQLJGEeWFDNAB7NR6BA" name="rotation" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfusQbJGEeWFDNAB7NR6BA" name="holonomicDrive">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfusQrJGEeWFDNAB7NR6BA">
+                  <body>
+     * Holonomic Drive method for Mecanum wheeled robots.
+     *
+     * This is an alias to mecanumDrive_Polar() for backward compatability
+     *
+     * @param magnitude The speed that the robot should drive in a given direction.  [-1.0..1.0]
+     * @param direction The direction the robot should drive. The direction and maginitute are
+     * independent of the rotation rate.
+     * @param rotation The rate of rotation for the robot that is completely independent of
+     * the magnitute or direction.  [-1.0..1.0]
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfvTULJGEeWFDNAB7NR6BA" name="magnitude" type="_-fMiILJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfvTUbJGEeWFDNAB7NR6BA" name="direction" type="_-fMiILJAEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfv6YLJGEeWFDNAB7NR6BA" name="rotation" type="_-fMiILJAEeWFDNAB7NR6BA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vfv6YbJGEeWFDNAB7NR6BA" name="setLeftRightMotorOutputs" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vfv6YrJGEeWFDNAB7NR6BA">
+                  <body> Set the speed of the right and left motors.
+     * This is used once an appropriate drive setup function is called such as
+     * twoWheelDrive(). The motors are set to &quot;leftSpeed&quot; and &quot;rightSpeed&quot;
+     * and includes flipping the direction of one side for opposing motors.
+     * @param leftOutput The speed to send to the left side of the robot.
+     * @param rightOutput The speed to send to the right side of the robot.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfwhcLJGEeWFDNAB7NR6BA" name="leftOutput" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfwhcbJGEeWFDNAB7NR6BA" name="rightOutput" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfxIgLJGEeWFDNAB7NR6BA" name="limit" visibility="protected" isStatic="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfxIgbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Limit motor values to the -1.0 to +1.0 range.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfxIgrJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfxvkLJGEeWFDNAB7NR6BA" name="num" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfxvkbJGEeWFDNAB7NR6BA" name="normalize" visibility="protected" isStatic="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfxvkrJGEeWFDNAB7NR6BA">
+                  <body>
+     * Normalize all wheel speeds if the magnitude of any wheel is greater than 1.0.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfyWoLJGEeWFDNAB7NR6BA" name="wheelSpeeds" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_VfyWobJGEeWFDNAB7NR6BA" name="rotateVector" visibility="protected" isStatic="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfyWorJGEeWFDNAB7NR6BA">
+                  <body>
+     * Rotate a vector in Cartesian space.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vfy9sLJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vfy9sbJGEeWFDNAB7NR6BA"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vfy9srJGEeWFDNAB7NR6BA" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfzkwLJGEeWFDNAB7NR6BA" name="x" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_VfzkwbJGEeWFDNAB7NR6BA" name="y" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf0L0LJGEeWFDNAB7NR6BA" name="angle" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf0y4LJGEeWFDNAB7NR6BA" name="setInvertedMotor" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vf0y4bJGEeWFDNAB7NR6BA">
+                  <body>
+     * Invert a motor direction.
+     * This is used when a motor should run in the opposite direction as the drive
+     * code would normally run it. Motors that are direct drive would be inverted, the
+     * drive code assumes that the motors are geared with one reversal.
+     * @param motor The motor index to invert.
+     * @param isInverted True if the motor should be inverted when operated.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf0y4rJGEeWFDNAB7NR6BA" name="motor" type="_Vf0L0bJGEeWFDNAB7NR6BA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf1Z8LJGEeWFDNAB7NR6BA" name="isInverted" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf1Z8bJGEeWFDNAB7NR6BA" name="setSensitivity" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vf1Z8rJGEeWFDNAB7NR6BA">
+                  <body>
+     * Set the turning sensitivity.
+     *
+     * This only impacts the drive() entry-point.
+     * @param sensitivity Effectively sets the turning sensitivity (or turn radius for a given value)
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf2BALJGEeWFDNAB7NR6BA" name="sensitivity" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf2BAbJGEeWFDNAB7NR6BA" name="setMaxOutput" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vf2BArJGEeWFDNAB7NR6BA">
+                  <body>
+     * Configure the scaling factor for using RobotDrive with motor controllers in a mode other than PercentVbus.
+     * @param maxOutput Multiplied with the output percentage computed by the drive functions.
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf2BA7JGEeWFDNAB7NR6BA" name="maxOutput" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf2oELJGEeWFDNAB7NR6BA" name="setCANJaguarSyncGroup" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vf2oEbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Set the number of the sync group for the motor controllers.  If the motor controllers are {@link CANJaguar}s,
+     * then they will all be added to this sync group, causing them to update their values at the same time.
+     *
+     * @param syncGroup the update group to add the motor controllers to
+     </body>
+                </ownedComment>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf2oErJGEeWFDNAB7NR6BA" name="syncGroup" type="__ITkEKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf3PILJGEeWFDNAB7NR6BA" name="free" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_Vf3PIbJGEeWFDNAB7NR6BA">
+                  <body>
+     * Free the speed controllers if they were allocated locally
+     </body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf3PIrJGEeWFDNAB7NR6BA" name="setExpiration" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf3PI7JGEeWFDNAB7NR6BA" name="timeout" type="_wiw3AKyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf32MLJGEeWFDNAB7NR6BA" name="getExpiration" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf32MbJGEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf32MrJGEeWFDNAB7NR6BA" name="isAlive" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf32M7JGEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf4dQLJGEeWFDNAB7NR6BA" name="isSafetyEnabled" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf4dQbJGEeWFDNAB7NR6BA" type="_wiz6UqyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf4dQrJGEeWFDNAB7NR6BA" name="setSafetyEnabled" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf5EULJGEeWFDNAB7NR6BA" name="enabled" type="_wiz6UqyvEeWRLuq1zmV17g"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf5EUbJGEeWFDNAB7NR6BA" name="getDescription" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf5EUrJGEeWFDNAB7NR6BA" type="_wilQ0qyvEeWRLuq1zmV17g" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf5EU7JGEeWFDNAB7NR6BA" name="stopMotor" visibility="public"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf5rYLJGEeWFDNAB7NR6BA" name="setupMotorSafety" visibility="private"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Vf5rYbJGEeWFDNAB7NR6BA" name="getNumMotors" visibility="protected">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Vf5rYrJGEeWFDNAB7NR6BA" type="_-ef-kbJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_VfOV8bJGEeWFDNAB7NR6BA" name="MotorType" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_VfO9ALJGEeWFDNAB7NR6BA">
+                  <body>
+     * The location of a motor on the robot for the purpose of driving
+     </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfO9AbJGEeWFDNAB7NR6BA" name="value" visibility="public" isLeaf="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_VfO9ArJGEeWFDNAB7NR6BA">
+                    <body>
+         * The integer value representing this enumeration
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfPkELJGEeWFDNAB7NR6BA" name="kFrontLeft_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfPkEbJGEeWFDNAB7NR6BA" name="kFrontRight_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfQLILJGEeWFDNAB7NR6BA" name="kRearLeft_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfQyMLJGEeWFDNAB7NR6BA" name="kRearRight_val" isLeaf="true" isStatic="true" type="_-ef-kbJAEeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfQyMbJGEeWFDNAB7NR6BA" name="kFrontLeft" visibility="public" isLeaf="true" isStatic="true" type="_VfOV8bJGEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_VfRZQLJGEeWFDNAB7NR6BA">
+                    <body>
+         * motortype: front left
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfRZQbJGEeWFDNAB7NR6BA" name="kFrontRight" visibility="public" isLeaf="true" isStatic="true" type="_VfOV8bJGEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_VfSAULJGEeWFDNAB7NR6BA">
+                    <body>
+         * motortype: front right
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfSAUbJGEeWFDNAB7NR6BA" name="kRearLeft" visibility="public" isLeaf="true" isStatic="true" type="_VfOV8bJGEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_VfSnYLJGEeWFDNAB7NR6BA">
+                    <body>
+         * motortype: rear left
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_VfSnYbJGEeWFDNAB7NR6BA" name="kRearRight" visibility="public" isLeaf="true" isStatic="true" type="_VfOV8bJGEeWFDNAB7NR6BA" isUnique="false">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_VfSnYrJGEeWFDNAB7NR6BA">
+                    <body>
+         * motortype: rear right
+         </body>
+                  </ownedComment>
+                </ownedAttribute>
+              </nestedClassifier>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_VfNH0bJGEeWFDNAB7NR6BA" name="MotorSafety"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_VfNu4LJGEeWFDNAB7NR6BA" name="MotorSafetyHelper"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Vf0L0bJGEeWFDNAB7NR6BA" name="MotorType"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6ByegLJHEeWFDNAB7NR6BA" name="interfaces">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6B0TsLJHEeWFDNAB7NR6BA" name="Potentiometer" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_6B0TsbJHEeWFDNAB7NR6BA">
+                  <body>
+ *
+ * @author alex
+ </body>
+                </ownedComment>
+                <generalization xmi:type="uml:Generalization" xmi:id="_6B06wLJHEeWFDNAB7NR6BA" general="_H2AZIbJEEeWFDNAB7NR6BA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_6B06wbJHEeWFDNAB7NR6BA" name="get">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_6B06wrJHEeWFDNAB7NR6BA" type="_wiw3AKyvEeWRLuq1zmV17g" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+            </packagedElement>
           </packagedElement>
         </packagedElement>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-e3yAbJAEeWFDNAB7NR6BA" name="Short"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-fMiILJAEeWFDNAB7NR6BA" name="Float"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Model" xmi:id="_wii0kKyvEeWRLuq1zmV17g" name="java">
     <packagedElement xmi:type="uml:Package" xmi:id="_wilQ0KyvEeWRLuq1zmV17g" name="java">
@@ -545,6 +3009,10 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_wjSbcqyvEeWRLuq1zmV17g" name="util">
         <packagedElement xmi:type="uml:Class" xmi:id="_wjTCgKyvEeWRLuq1zmV17g" name="Enumeration"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LWy_UbJEEeWFDNAB7NR6BA" name="Vector"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_VeQFkLJGEeWFDNAB7NR6BA" name="nio">
+        <packagedElement xmi:type="uml:Class" xmi:id="_VeQFkbJGEeWFDNAB7NR6BA" name="ByteBuffer"/>
       </packagedElement>
     </packagedElement>
   </packagedElement>
@@ -552,14 +3020,69 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_wiz6UayvEeWRLuq1zmV17g" name="datatype">
       <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wiz6UqyvEeWRLuq1zmV17g" name="Boolean"/>
       <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__ITkEKyvEeWRLuq1zmV17g" name="Byte"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-ef-kbJAEeWFDNAB7NR6BA" name="Integer"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_VeR6wLJGEeWFDNAB7NR6BA" name="Long"/>
     </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BAbxEKy1EeWRLuq1zmV17g" memberEnd="_BAcYIqy1EeWRLuq1zmV17g _BAc_MKy1EeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BAcYIKy1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BAcYIay1EeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BAcYIqy1EeWRLuq1zmV17g" name="close claw" type="_7nWzkKy0EeWRLuq1zmV17g" association="_BAbxEKy1EeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BAc_MKy1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_BAbxEKy1EeWRLuq1zmV17g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vtP8kKy1EeWRLuq1zmV17g" memberEnd="_vtRKsKy1EeWRLuq1zmV17g _vtRKsay1EeWRLuq1zmV17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vtQjoKy1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vtQjoay1EeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vtRKsKy1EeWRLuq1zmV17g" name="raise wrist" type="_q_qMEKy1EeWRLuq1zmV17g" association="_vtP8kKy1EeWRLuq1zmV17g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vtRKsay1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_vtP8kKy1EeWRLuq1zmV17g"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_ldeIIKywEeWRLuq1zmV17g" name="org">
     <packagedElement xmi:type="uml:Package" xmi:id="_9hJjkKywEeWRLuq1zmV17g" name="usfirst">
       <packagedElement xmi:type="uml:Package" xmi:id="_CiCqkKyxEeWRLuq1zmV17g" name="frc">
         <packagedElement xmi:type="uml:Package" xmi:id="_DmyFEKyxEeWRLuq1zmV17g" name="teamsamplesathira">
           <packagedElement xmi:type="uml:Package" xmi:id="_MKpjkKyxEeWRLuq1zmV17g" name="robot">
-            <packagedElement xmi:type="uml:Package" xmi:id="_TJ9fEKyxEeWRLuq1zmV17g" name="subsystems"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_TJ9fEKyxEeWRLuq1zmV17g" name="subsystems">
+              <packagedElement xmi:type="uml:Class" xmi:id="_cXBmILJEEeWFDNAB7NR6BA" name="Claw">
+                <generalization xmi:type="uml:Generalization" xmi:id="_m9U2cLJEEeWFDNAB7NR6BA" general="_wjKfoayvEeWRLuq1zmV17g"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_St6hYLJFEeWFDNAB7NR6BA" name="motor" visibility="private">
+                  <type xmi:type="uml:Interface" href="../SampleRavee/model.uml#_AzJdIKtvEeWYtN-iDOBHKg"/>
+                </ownedAttribute>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_yJudcLJEEeWFDNAB7NR6BA" name="Claw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_dhpmMLJEEeWFDNAB7NR6BA" name="DriveTrain">
+                <generalization xmi:type="uml:Generalization" xmi:id="_mbOO8LJEEeWFDNAB7NR6BA" general="_wjKfoayvEeWRLuq1zmV17g"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_pi11QLJGEeWFDNAB7NR6BA" name="drive" visibility="private" type="_VfMgwLJGEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_1Ix9oLJGEeWFDNAB7NR6BA" name="left_encoder" visibility="private" type="_VeqVQLJGEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_7TSYELJGEeWFDNAB7NR6BA" name="right_encoder" visibility="private" type="_VeqVQLJGEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_CyDPsLJHEeWFDNAB7NR6BA" name="rangefinder" visibility="private" type="_LVtIQLJGEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_Kue6wLJHEeWFDNAB7NR6BA" name="gyro" visibility="private" type="_LVpd4LJGEeWFDNAB7NR6BA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_1UXNcLJEEeWFDNAB7NR6BA" name="DriveTrain"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_fAaqQLJEEeWFDNAB7NR6BA" name="Elevator">
+                <generalization xmi:type="uml:Generalization" xmi:id="_lmgNcLJEEeWFDNAB7NR6BA" general="_H18uwLJEEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_Pz3qwLJIEeWFDNAB7NR6BA" name="motor" visibility="private">
+                  <type xmi:type="uml:Interface" href="../SampleRavee/model.uml#_AzJdIKtvEeWYtN-iDOBHKg"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_tT1IsLJIEeWFDNAB7NR6BA" name="pot" visibility="private" type="_6B0TsLJHEeWFDNAB7NR6BA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_3W_zkLJEEeWFDNAB7NR6BA" name="Elevator"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_gwlnYLJEEeWFDNAB7NR6BA" name="Wrist">
+                <generalization xmi:type="uml:Generalization" xmi:id="_kVFo4LJEEeWFDNAB7NR6BA" general="_H18uwLJEEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0siboLJIEeWFDNAB7NR6BA" name="motor" visibility="private">
+                  <type xmi:type="uml:Interface" href="../SampleRavee/model.uml#_AzJdIKtvEeWYtN-iDOBHKg"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_3dT6ILJIEeWFDNAB7NR6BA" name="pot" visibility="private" type="_6B0TsLJHEeWFDNAB7NR6BA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_XFUCoLJJEeWFDNAB7NR6BA" name="kP_real" visibility="private" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_egGZMLJJEeWFDNAB7NR6BA" name="kP_simulation" visibility="private" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_4-CC0LJEEeWFDNAB7NR6BA" name="Wrist"/>
+              </packagedElement>
+            </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_QeAPIKyxEeWRLuq1zmV17g" name="commands">
               <packagedElement xmi:type="uml:Class" xmi:id="_4e4HEKyxEeWRLuq1zmV17g" name="SetElevatorSetpoint" visibility="public">
                 <generalization xmi:type="uml:Generalization" xmi:id="_QeE1sKyzEeWRLuq1zmV17g" general="_wiLoMKyvEeWRLuq1zmV17g"/>
@@ -583,24 +3106,23 @@
                 <ownedOperation xmi:type="uml:Operation" xmi:id="_CLQwAKy2EeWRLuq1zmV17g" name="SetWristSetPoint"/>
               </packagedElement>
             </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_KKucgLI-EeWFDNAB7NR6BA" name="util"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_zpy7ULI_EeWFDNAB7NR6BA" name="OI">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_XYWNALJBEeWFDNAB7NR6BA" name="joy" visibility="private" type="_-ebtILJAEeWFDNAB7NR6BA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_vo94QLJBEeWFDNAB7NR6BA" name="OI"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_Lap2gLJCEeWFDNAB7NR6BA" name="getjoystick">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_Lap2gbJCEeWFDNAB7NR6BA" name="joyStick" type="_-ebtILJAEeWFDNAB7NR6BA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1Ief0LI_EeWFDNAB7NR6BA" name="Robot">
+              <generalization xmi:type="uml:Generalization" xmi:id="_q8xZcLJCEeWFDNAB7NR6BA" general="_hH3w4LJCEeWFDNAB7NR6BA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_SzbFwLJAEeWFDNAB7NR6BA" name="RobotMap"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Uil9ULJAEeWFDNAB7NR6BA" name="GamePadConstants"/>
           </packagedElement>
         </packagedElement>
       </packagedElement>
     </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_BAbxEKy1EeWRLuq1zmV17g" memberEnd="_BAcYIqy1EeWRLuq1zmV17g _BAc_MKy1EeWRLuq1zmV17g">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BAcYIKy1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BAcYIay1EeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_BAcYIqy1EeWRLuq1zmV17g" name="close claw" type="_7nWzkKy0EeWRLuq1zmV17g" association="_BAbxEKy1EeWRLuq1zmV17g"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_BAc_MKy1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_BAbxEKy1EeWRLuq1zmV17g"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_vtP8kKy1EeWRLuq1zmV17g" memberEnd="_vtRKsKy1EeWRLuq1zmV17g _vtRKsay1EeWRLuq1zmV17g">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vtQjoKy1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vtQjoay1EeWRLuq1zmV17g" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_vtRKsKy1EeWRLuq1zmV17g" name="raise wrist" type="_q_qMEKy1EeWRLuq1zmV17g" association="_vtP8kKy1EeWRLuq1zmV17g"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_vtRKsay1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_vtP8kKy1EeWRLuq1zmV17g"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_w5o3MKy1EeWRLuq1zmV17g" memberEnd="_w5peQay1EeWRLuq1zmV17g _w5peQqy1EeWRLuq1zmV17g">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w5o3May1EeWRLuq1zmV17g" source="org.eclipse.papyrus">
@@ -608,6 +3130,86 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_w5peQay1EeWRLuq1zmV17g" name="lower wrist" type="_tPZaEKy1EeWRLuq1zmV17g" association="_w5o3MKy1EeWRLuq1zmV17g"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_w5peQqy1EeWRLuq1zmV17g" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_w5o3MKy1EeWRLuq1zmV17g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kja6gLFtEeWFDNAB7NR6BA" name="Driver">
+    <generalization xmi:type="uml:Generalization" xmi:id="_zRfa8LI9EeWFDNAB7NR6BA" general="_rkZzcLI9EeWFDNAB7NR6BA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zH8T4LFtEeWFDNAB7NR6BA" memberEnd="_zIBMYLFtEeWFDNAB7NR6BA _zIBzcLFtEeWFDNAB7NR6BA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zH-wILFtEeWFDNAB7NR6BA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zH_XMLFtEeWFDNAB7NR6BA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zIBMYLFtEeWFDNAB7NR6BA" name="tank drive" type="_qdE1gLFtEeWFDNAB7NR6BA" association="_zH8T4LFtEeWFDNAB7NR6BA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zIBzcLFtEeWFDNAB7NR6BA" name="driver" type="_kja6gLFtEeWFDNAB7NR6BA" association="_zH8T4LFtEeWFDNAB7NR6BA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_w0Mg0LI3EeWFDNAB7NR6BA" memberEnd="_w0NH4bI3EeWFDNAB7NR6BA _w0NH4rI3EeWFDNAB7NR6BA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w0Mg0bI3EeWFDNAB7NR6BA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w0NH4LI3EeWFDNAB7NR6BA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w0NH4bI3EeWFDNAB7NR6BA" name="pickup" type="_tklxQLI3EeWFDNAB7NR6BA" association="_w0Mg0LI3EeWFDNAB7NR6BA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w0NH4rI3EeWFDNAB7NR6BA" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_w0Mg0LI3EeWFDNAB7NR6BA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZyHk8LI6EeWFDNAB7NR6BA" memberEnd="_ZyIMAbI6EeWFDNAB7NR6BA _ZyIMArI6EeWFDNAB7NR6BA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZyHk8bI6EeWFDNAB7NR6BA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZyIMALI6EeWFDNAB7NR6BA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZyIMAbI6EeWFDNAB7NR6BA" name="place" type="_Jjg6QLI4EeWFDNAB7NR6BA" association="_ZyHk8LI6EeWFDNAB7NR6BA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZyIMArI6EeWFDNAB7NR6BA" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_ZyHk8LI6EeWFDNAB7NR6BA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_feLv4LI6EeWFDNAB7NR6BA" name="Field Manager"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m3cccLI6EeWFDNAB7NR6BA" memberEnd="_m3dDgbI6EeWFDNAB7NR6BA _m3dDgrI6EeWFDNAB7NR6BA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m3cccbI6EeWFDNAB7NR6BA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m3dDgLI6EeWFDNAB7NR6BA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m3dDgbI6EeWFDNAB7NR6BA" name="autnomous" type="_4KBCYLI4EeWFDNAB7NR6BA" association="_m3cccLI6EeWFDNAB7NR6BA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m3dDgrI6EeWFDNAB7NR6BA" name="field manager" type="_feLv4LI6EeWFDNAB7NR6BA" association="_m3cccLI6EeWFDNAB7NR6BA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WUnt4LI7EeWFDNAB7NR6BA" memberEnd="_WUo8ALI7EeWFDNAB7NR6BA _WUo8AbI7EeWFDNAB7NR6BA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WUoU8LI7EeWFDNAB7NR6BA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WUoU8bI7EeWFDNAB7NR6BA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WUo8ALI7EeWFDNAB7NR6BA" name="pickup" type="_tklxQLI3EeWFDNAB7NR6BA" association="_WUnt4LI7EeWFDNAB7NR6BA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WUo8AbI7EeWFDNAB7NR6BA" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_WUnt4LI7EeWFDNAB7NR6BA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mzAy8LI7EeWFDNAB7NR6BA" memberEnd="_mzBaArI7EeWFDNAB7NR6BA _mzBaA7I7EeWFDNAB7NR6BA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mzBaALI7EeWFDNAB7NR6BA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mzBaAbI7EeWFDNAB7NR6BA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mzBaArI7EeWFDNAB7NR6BA" name="preparetopickup" type="_-Rik0LI5EeWFDNAB7NR6BA" association="_mzAy8LI7EeWFDNAB7NR6BA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mzBaA7I7EeWFDNAB7NR6BA" name="tool-op" type="_PLPuIKyuEeWRLuq1zmV17g" association="_mzAy8LI7EeWFDNAB7NR6BA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_rkZzcLI9EeWFDNAB7NR6BA" name="User"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_dZ5xsLI_EeWFDNAB7NR6BA" name="GearBot">
+    <packagedElement xmi:type="uml:Package" xmi:id="_dafnkLI_EeWFDNAB7NR6BA" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_dafnkbI_EeWFDNAB7NR6BA" name="usfirst">
+        <packagedElement xmi:type="uml:Package" xmi:id="_dagOoLI_EeWFDNAB7NR6BA" name="frc">
+          <packagedElement xmi:type="uml:Package" xmi:id="_dagOobI_EeWFDNAB7NR6BA" name="team1285">
+            <packagedElement xmi:type="uml:Package" xmi:id="_dagOorI_EeWFDNAB7NR6BA" name="robot">
+              <packagedElement xmi:type="uml:Class" xmi:id="_daj5ALI_EeWFDNAB7NR6BA" name="OI" visibility="public">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_dalHILI_EeWFDNAB7NR6BA">
+                  <body>
+ * This class is the glue that binds the controls on the physical operator
+ * interface to the commands and command groups that allow control of the robot.
+ </body>
+                </ownedComment>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_daoxgLI_EeWFDNAB7NR6BA" name="joy" visibility="private" type="_daoKc7I_EeWFDNAB7NR6BA" isUnique="false"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_dap_oLI_EeWFDNAB7NR6BA" name="getJoystick" visibility="public">
+                  <ownedParameter xmi:type="uml:Parameter" xmi:id="_darNwLI_EeWFDNAB7NR6BA" type="_daoKc7I_EeWFDNAB7NR6BA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_danjYLI_EeWFDNAB7NR6BA" name="edu">
+      <packagedElement xmi:type="uml:Package" xmi:id="_daoKcLI_EeWFDNAB7NR6BA" name="wpi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_daoKcbI_EeWFDNAB7NR6BA" name="first">
+          <packagedElement xmi:type="uml:Package" xmi:id="_daoKcrI_EeWFDNAB7NR6BA" name="wpilibj">
+            <packagedElement xmi:type="uml:Class" xmi:id="_daoKc7I_EeWFDNAB7NR6BA" name="Joystick"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__A7boKytEeWRLuq1zmV17g">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__A-e8KytEeWRLuq1zmV17g" source="http://www.eclipse.org/uml2/2.0.0/UML">
