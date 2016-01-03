@@ -1581,7 +1581,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dh2aibJEEeWFDNAB7NR6BA"/>
           </children>
           <element xmi:type="uml:Class" href="sample.uml#_dhpmMLJEEeWFDNAB7NR6BA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dh1zcbJEEeWFDNAB7NR6BA" x="114" y="16"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dh1zcbJEEeWFDNAB7NR6BA" x="116" y="15"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_fAnekLJEEeWFDNAB7NR6BA" type="3010">
           <children xmi:type="notation:DecorationNode" xmi:id="_fAnekrJEEeWFDNAB7NR6BA" type="5014"/>
