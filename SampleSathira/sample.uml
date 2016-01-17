@@ -3100,13 +3100,17 @@
                 <ownedOperation xmi:type="uml:Operation" xmi:id="_5HAzMKyzEeWRLuq1zmV17g" name="OpenClaw"/>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_MGbOEKy1EeWRLuq1zmV17g" name="CloseClaw">
+                <generalization xmi:type="uml:Generalization" xmi:id="_kBk0UL03EeWB-ZxxaqLj9A" general="_wiLoMKyvEeWRLuq1zmV17g"/>
                 <ownedOperation xmi:type="uml:Operation" xmi:id="_ZkiZAKy1EeWRLuq1zmV17g" name="CloseClaw"/>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_6Pw5EKy1EeWRLuq1zmV17g" name="SetWristSetPoint">
+                <generalization xmi:type="uml:Generalization" xmi:id="_lSxWcL03EeWB-ZxxaqLj9A" general="_wiLoMKyvEeWRLuq1zmV17g"/>
                 <ownedOperation xmi:type="uml:Operation" xmi:id="_CLQwAKy2EeWRLuq1zmV17g" name="SetWristSetPoint"/>
               </packagedElement>
             </packagedElement>
-            <packagedElement xmi:type="uml:Package" xmi:id="_KKucgLI-EeWFDNAB7NR6BA" name="util"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_KKucgLI-EeWFDNAB7NR6BA" name="util">
+              <packagedElement xmi:type="uml:Class" xmi:id="_USCHYL05EeWB-ZxxaqLj9A" name="PIDController"/>
+            </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_zpy7ULI_EeWFDNAB7NR6BA" name="OI">
               <ownedAttribute xmi:type="uml:Property" xmi:id="_XYWNALJBEeWFDNAB7NR6BA" name="joy" visibility="private" type="_-ebtILJAEeWFDNAB7NR6BA"/>
               <ownedOperation xmi:type="uml:Operation" xmi:id="_vo94QLJBEeWFDNAB7NR6BA" name="OI"/>
