@@ -1,10 +1,13 @@
 
 package org.usfirst.frc.teamsamplesathira.robot;
 
+import org.usfirst.frc.teamsamplesathira.robot.subsystems.Drivetrain;
+
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to each mode, as described in the IterativeRobot
@@ -13,7 +16,8 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
  * directory.
  */
 public class Robot extends IterativeRobot {
-
+	
+	public static Drivetrain drivetrain;
 	public static OI oi;
 
     Command autonomousCommand;
@@ -23,9 +27,11 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
+    	drivetrain = new Drivetrain();
 		oi = new OI();
         // instantiate the command used for the autonomous period
-
+		SmartDashboard.putData(drivetrain);
+		System.out.println("Robot has been init");
     }
 	
 	public void disabledPeriodic() {
@@ -50,6 +56,7 @@ public class Robot extends IterativeRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
+        System.out.println("teleop has been init");
     }
 
     /**
@@ -65,6 +72,7 @@ public class Robot extends IterativeRobot {
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
+        System.out.println("teleop periodic");
     }
     
     /**
